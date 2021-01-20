@@ -1,0 +1,21 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=description content><meta name=generator content="Hugo 0.79.1"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/css/style.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type=text/css><link rel=alternate href=/index.xml type=application/rss+xml title=我爱我的祖国><title>我爱我的祖国</title></head><body><header><div class="container clearfix"><a class=path href=https://blog.fanlushuai.win>[我爱我的祖国]</a>
+<span class=caret># _</span><div class=right></div></div></header><div class=container><main role=main class=article><article class=single itemscope itemtype=http://schema.org/BlogPosting><div class=meta></div><h1 class=headline itemprop=headline></h1><section class=body itemprop=articleBody><h1 id=this-is-a-basic-workflow-to-help-you-get-started-with-actions>This is a basic workflow to help you get started with Actions</h1><p>name: CI</p><h1 id=controls-when-the-action-will-run>Controls when the action will run.</h1><p>on:</p><h1 id=triggers-the-workflow-on-push-or-pull-request-events-but-only-for-the-master-branch>Triggers the workflow on push or pull request events but only for the master branch</h1><p>push:
+branches: [ master ]
+pull_request:
+branches: [ master ]</p><h1 id=allows-you-to-run-this-workflow-manually-from-the-actions-tab>Allows you to run this workflow manually from the Actions tab</h1><p>workflow_dispatch:</p><h1 id=a-workflow-run-is-made-up-of-one-or-more-jobs-that-can-run-sequentially-or-in-parallel>A workflow run is made up of one or more jobs that can run sequentially or in parallel</h1><p>jobs:</p><h1 id=this-workflow-contains-a-single-job-called-build>This workflow contains a single job called &ldquo;build&rdquo;</h1><p>build:
+# The type of runner that the job will run on
+runs-on: ubuntu-latest</p><pre><code># Steps represent a sequence of tasks that will be executed as part of the job
+steps:
+  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  - uses: actions/checkout@v2
+
+  # Runs a single command using the runners shell
+  - name: Run a one-line script
+    run: echo Hello, world!
+
+  # Runs a set of commands using the runners shell
+  - name: Run a multi-line script
+    run: |
+      echo Add other actions to build,
+      echo test, and deploy your project.
+</code></pre></section></article></main></div><footer><div class=container><span class=copyright>&copy; 1 我爱我的祖国 - <a rel=license href=http://creativecommons.org/licenses/by/4.0/>CC BY 4.0</a></span></div></footer></body></html>
