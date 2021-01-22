@@ -1,18 +1,61 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=description content><meta name=generator content="Hugo 0.79.1"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/css/style.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type=text/css><link rel=alternate href=/index.xml type=application/rss+xml title=我爱我的祖国><title>我爱我的祖国</title></head><body><header><div class="container clearfix"><a class=path href=https://blog.fanlushuai.win>[我爱我的祖国]</a>
-<span class=caret># _</span><div class=right></div></div></header><div class=container><main role=main class=article><article class=single itemscope itemtype=http://schema.org/BlogPosting><div class=meta></div><h1 class=headline itemprop=headline></h1><section class=body itemprop=articleBody><p><a href=https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions>https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions</a>
-<a href=https://help.github.com/cn/actions/reference/workflow-syntax-for-github-actions>https://help.github.com/cn/actions/reference/workflow-syntax-for-github-actions</a> 中文文档</p><p>github action 语法学习</p><p>文件位置:
-.github/workflow</p><p>文件语法：
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="generator" content="Hugo 0.79.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="我爱我的祖国">
+<title>我爱我的祖国</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://blog.fanlushuai.win">[我爱我的祖国]</a>
+    <span class="caret"># _</span>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline"></h1>
+  <section class="body" itemprop="articleBody">
+    <p><a href="https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions">https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions</a>
+<a href="https://help.github.com/cn/actions/reference/workflow-syntax-for-github-actions">https://help.github.com/cn/actions/reference/workflow-syntax-for-github-actions</a>  中文文档</p>
+<p>github action 语法学习</p>
+<p>文件位置:
+.github/workflow</p>
+<p>文件语法：
 name：
 功能：定义一个acion的名字。
 用法：
 值定义：github仓库页面上action页面会显示用的action
-值不定义：那么github 仓库页上action点击会跳转回到仓库首页。</p><p>on:
+值不定义：那么github 仓库页上action点击会跳转回到仓库首页。</p>
+<p>on:
 功能：触发工作流
 事件触发：
 用法：
-单事件 on: push
+单事件    on: push
 多事件（之间或关系） on: [push,pull_request]
-事件 单activity： on: push: branches:-master \#注释：每个事件对应的具体子操作（activity)<br>事件 多activity： on: release : types: [published,created,] \这个其实有问题。应该是types是一个限制。限制哪些activity能触发。但是activity也可以继续配置，比如配置-master。活动的具体参数。<br>\web hook事件也支持，具体没研究。</p><pre><code>    事件 活动的 文件限制：
+事件 单activity：	on: push: branches:-master   \#注释：每个事件对应的具体子操作（activity)     <br>
+事件 多activity：    on: release : types: [published,created,]   \这个其实有问题。应该是types是一个限制。限制哪些activity能触发。但是activity也可以继续配置，比如配置-master。活动的具体参数。      <br>
+\web hook事件也支持，具体没研究。</p>
+<pre><code>    事件 活动的 文件限制：
     支持分支和tag过滤： 提供branches, branches-ignore, tags, and tags-ignore 。赋值支持模式匹配。* ** ？ + [] ! 类似glob语法。但是*和**特殊
     支持路径过滤： path和path-ignore关键字，不同时用，值也是glob语法，可以配置多个。- glob1 - glob2。 原理是通过git diff。如法发现要求的路径没改动，但是git diif 超时也会触发运行。
 
@@ -21,16 +64,22 @@ name：
       schedule:
         # * is a special character in YAML so you have to quote this string    cron表达式
         - cron:  '*/15 * * * *'	
-</code></pre><p>env：
+</code></pre>
+<p>env：
 功能： 变量定义
 全局定义：
 job内定义：
-job内的step定义：</p><pre><code>同名变量的覆盖规则：内部的会覆盖外部的。most specific 而不是last或者first
-</code></pre><p>defaults：
+job内的step定义：</p>
+<pre><code>同名变量的覆盖规则：内部的会覆盖外部的。most specific 而不是last或者first
+</code></pre>
+<p>defaults：
 配置集合。可以应用给全部job。也可以在job内指定自己的。
-同名覆盖（生效）规则，也是most specific</p><pre><code>defaults.run 配置run的配置，在工作流中配置，可以共享给所有job
-</code></pre><p>jobs:
-功能：定义job组。工作流，是由一个或者多个的job组成。</p><pre><code>job状态可以通过api查询，查询的时候可以模式匹配具体的job
+同名覆盖（生效）规则，也是most specific</p>
+<pre><code>defaults.run 配置run的配置，在工作流中配置，可以共享给所有job
+</code></pre>
+<p>jobs:
+功能：定义job组。工作流，是由一个或者多个的job组成。</p>
+<pre><code>job状态可以通过api查询，查询的时候可以模式匹配具体的job
 
 jobs.jobid.name 给job取名，必要的。 job名会显示在github上。
 jobs.jobid.needs 配置jobs组内的job的依赖关系。 默认是并行执行的。并行任务有数量限制，不过很大。 needs的取值，可以是单个jobid 或者 [jobid1,jobid2]
@@ -100,11 +149,32 @@ jobs.&lt;job_id&gt;.steps.with.entrypoint
 jobs.&lt;job_id&gt;.steps.env  runner的环境
 jobs.&lt;job_id&gt;.steps.continue-on-error 忽略错误继续执行，true。
 jobs.&lt;job_id&gt;.steps.timeout-minutes 执行超时，kill的时间。
-</code></pre><p>配置好之后。有ui界面进行管理。 查看日志，下砸日志，搜索日志。查看历史运行。等等：https://help.github.com/en/actions/configuring-and-managing-workflows/managing-a-workflow-run#viewing-your-workflow-history</p><p>工作流的了解事项：
-触发条件 event-activity-limit
-工作流组的定义与组合 jobs-job-step-run
+</code></pre>
+<p>配置好之后。有ui界面进行管理。 查看日志，下砸日志，搜索日志。查看历史运行。等等：https://help.github.com/en/actions/configuring-and-managing-workflows/managing-a-workflow-run#viewing-your-workflow-history</p>
+<p>工作流的了解事项：
+触发条件  event-activity-limit
+工作流组的定义与组合  jobs-job-step-run
 step的表达式语法和上下文变量：https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions
 runner机器的配置。尤其是文件系统的配置, 仓库位置。
 runner实例处理step的。
 run的用法，命令，acion脚本，容器
-工作流的web使用。 查看，搜索，下载，日志。 管理执行流程。</p><p>其实steps定义的子位置是run。而不是step。</p><p>GitHub Actions is not available for private repositories owned by accounts using legacy per-repository plans？？？？？？</p></section></article></main></div><footer><div class=container><span class=copyright>&copy; 1 我爱我的祖国 - <a rel=license href=http://creativecommons.org/licenses/by/4.0/>CC BY 4.0</a></span></div></footer></body></html>
+工作流的web使用。 查看，搜索，下载，日志。 管理执行流程。</p>
+<p>其实steps定义的子位置是run。而不是step。</p>
+<p>GitHub Actions is not available for private repositories owned by accounts using legacy per-repository plans？？？？？？</p>
+
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 1 我爱我的祖国 - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
+
