@@ -3,11 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.fanlushuai.win/plan/%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%94%BE%E5%BC%83%E4%BA%86leanote/</loc>
+    <loc>https://blog.fanlushuai.win/play/hugo%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2017-10-12T23:52:51+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.fanlushuai.win/play/%E6%94%BE%E5%BC%83leanote/</loc>
+    <loc>https://blog.fanlushuai.win/play/</loc>
+    <lastmod>2017-10-12T23:52:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.fanlushuai.win/</loc>
+    <lastmod>2017-10-12T23:52:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.fanlushuai.win/plan/%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%94%BE%E5%BC%83%E4%BA%86leanote/</loc>
   </url>
   
   <url>
@@ -19,15 +30,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fanlushuai.win/play/</loc>
-  </url>
-  
-  <url>
     <loc>https://blog.fanlushuai.win/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.fanlushuai.win/</loc>
   </url>
   
 </urlset>
