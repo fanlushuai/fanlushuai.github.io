@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 19 Apr 2019 21:37:58 +0530</lastBuildDate><atom:link href="https://blog.fanlushuai.win/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>todoList</title>
       <link>https://blog.fanlushuai.win/plan/todoList/</link>
       <pubDate>Fri, 19 Apr 2019 21:37:58 +0530</pubDate>
       
@@ -43,15 +43,6 @@ hugo自己本来的目录依赖于自己的结构。
 所以除了对抗语言冲突，治本的做法是，做些让他觉得懂的，让他闭嘴。
  一些资源： https://www.zhihu.com/topic/20053388/hot
  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.fanlushuai.win/plan/%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%94%BE%E5%BC%83%E4%BA%86leanote/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.fanlushuai.win/plan/%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%94%BE%E5%BC%83%E4%BA%86leanote/</guid>
-      <description></description>
     </item>
     
   </channel>
