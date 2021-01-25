@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Plays on Auh</title><link>https://player.fanlushuai.win/play/</link><description>Recent content in Plays on Auh</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 12 Oct 2017 23:52:51 +0800</lastBuildDate><atom:link href="https://player.fanlushuai.win/play/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://player.fanlushuai.win/play/hugo%E9%85%8D%E7%BD%AE/</link><pubDate>Thu, 12 Oct 2017 23:52:51 +0800</pubDate><guid>https://player.fanlushuai.win/play/hugo%E9%85%8D%E7%BD%AE/</guid><description>hugo配置 但如是果你的文件结构和他的不一样。他可能为因检测不到而出现生存不了的情况。所以，需要做一些配置。
 hugo自己本来的目录依赖于自己的结构。
 如何配置 配置文件的位置 配置文件的位置，默认寸照根目录的config.toml-&amp;gt;config.yaml-&amp;gt;config.json
-也可以使用hugo &amp;ndash;configffff xxx ,yyy,xxx 来指定一个或者多个配置文件
-配置文件目录来区分不同的运行环境，比如生产，开发，等
-配置文件如何编写 查看完整的定义的变量列表。在配置文件里面进行重写即可</description></item></channel></rss>
+也可以使用hugo &amp;ndash;configffff xxx ,yyy,xxx 来指定一个或者多个配置文件</description></item></channel></rss>
