@@ -1,0 +1,114 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=description content>
+<meta name=generator content="Hugo 0.92.0">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-188010236-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=stylesheet href=/css/style.css type=text/css>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type=text/css>
+<link rel=alternate href=/index.xml type=application/rss+xml title=Auh>
+<title>Auh</title>
+</head>
+<body>
+<header>
+<div class="container clearfix">
+<a class=path href>[Auh]</a>
+<span class=caret># _</span>
+<div class=right>
+</div>
+</div>
+</header>
+<div class=container>
+<main role=main class=article>
+<article class=single itemscope itemtype=http://schema.org/BlogPosting>
+<div class=meta>
+<span class=key>published on</span>
+<span class=val><time itemprop=datePublished datetime="2021-01-09 05:44:30">2021-01-09 05:44:30</time></span>
+<span class=key>1942 words</span>
+</div>
+<h1 class=headline itemprop=headline>京东抢购代码各种炫技的思考</h1>
+<section class=body itemprop=articleBody>
+<p>不得不说，github上面又一轮新的霸榜项目出现了。京东抢购的代码。可能目的都是抢茅台，利润丰厚吧。</p>
+<p>自己也参与了一些版本。也研究过别人写的版本。参与过其中，自己琢磨过，也看过别人写的。</p>
+<h2 id=总结一下github上面抢茅台各个版本>总结一下github上面，抢茅台各个版本</h2>
+<ol>
+<li>语言
+js，python，go，shell的。全部有。</li>
+<li>类型
+直接搞协议的，浏览器插件的，chromedriver版本的。</li>
+</ol>
+<h3 id=类型角度分析>类型角度分析：</h3>
+<ul>
+<li>
+<p>从简单性角度考虑，可能chrome插件类型的比较舒服。针对简单的不是很火爆的东西，应该抢起来很简单。</p>
+</li>
+<li>
+<p>chromderver版本可能对于多账号的话，ok一点。感觉不是很好。因为很耗费性能，所以，优势不大。当然，单账号的话，应该是比插件版本的强一点，毕竟不需要渲染页面，这些ul操作。不过变成复杂度稍微搞一点点。</p>
+</li>
+<li>
+<p>搞协议的，分析http协议，分析参数，分析参数的生成位置，以及各个位置的传递关系。其中最重要的与其他的差异在于，分析协议一定需要登录的，要分析一个登录过程。然后加抢购过程。所以，难度和任务量都增加了。</p>
+</li>
+</ul>
+<p>我属于搞协议的，协议的难度非常之高。普通的爬虫人员估计没有这种水平。非常需要耐心和各种技巧。我本人也是没有这个能力的。只能分析简单的，复杂的我也搞不定。还是仰仗大佬提前搞出来的协议。（以后，一定要多找机会练练，学学，是一门硬技术）</p>
+<h3 id=协议版本的分析>协议版本的分析</h3>
+<p>在搞协议的这个阵营。除了单纯的流水账式的写程序之外。
+还看到了一些优化。
+代码质量的优化，
+服务部署的优化。
+业务流程的优化。
+场景的优化问题。
+其中最关键的是，到点抢购的优化。
+京东这个体量的抢购，100个商品，几十万的人同时抢。基本上超不过1s中，所有东西都没有了。敌人不光是普通用户和机器人用户。</p>
+<p>所以，一定要确保第一时间，触发，第一时间完成。</p>
+<p>触发时间的优化：
+同步服务器时间，确保本地时间和服务器时间是一致的。
+sleep等待，这个等待由于程序的限制，是否能够达到毫秒级也成为一个很重要的问题。一般都是sleep+轮训毫秒时间等待，来完成。
+进一步优化，同步服务器时间，因为是基于http协议的，这个http可能存在一些延时。所以基于http同步的时间是不准的。
+如何校准？
+方式一：通过一个简单的算法来校准。认为http一来一回事等时的。然后返回的响应时间+http请求耗时/2
+方式二：通过sock的方式，这个方式能够截断报文，减少耗时。</p>
+<p>这样优化的目的是确保比别人快。之后的http的速度，优化的问题。</p>
+<p>还有一个优化方向，是架构的优化。
+对于多商品，多账号的优化。
+多开几个实例是可以做到，多个账户同时开抢。
+然而，多开可能存在多个监控线程。轮训的操作。
+而且，多开会造成多个账户都会做相同的操作。而实际上，有些业务是只要一个账号做到，其他账号共享这个消息就行了。
+所以，可以出现一些订阅发布的架构模式。</p>
+<p>针对，某个一个信号型的消息，可以多开几个实例，做到一个赢者为王的并发模式，进行加速这个一个连接的获取。</p>
+<h3 id=不同语言>不同语言</h3>
+<p>经过我实际的参与，我个人感觉python版本的执行效率不高。
+还有就是python的并发编程感觉不是很友好。Python全局解释器锁GIL（Global Interpreter Lock）。优点，有大量的库，这个不用说了。服务器大多数默认安装了python，直接当脚本执行挺好。不过有docker也无所谓了。</p>
+<p>go语言就比较好，基于协程的并发处理。感觉不错。而且go语言的语法比较另类。但是个人觉得另类却优秀！编程体验很ok。缺点就是，开发出来的类库可能没有很多。但是也够用。</p>
+<p>js，我就不评价了，肯定不如go。主要是js我也不是很精通，只能简单分析一下。js就浏览器扩展这一块，肯定是胜出的。</p>
+<h2 id=感悟>感悟</h2>
+<h3 id=爬虫技术>爬虫技术</h3>
+<p>自己搞爬虫其实也不少。
+然而，对爬虫的协议分析缺少系统和强硬的手段，未来希望自己多研究学习一下，一些难度稍微有点的接口，总是望而生畏就很难受。
+还有关于，网络部分的。用sock和http交叉使用。这个我觉得是本次分析遇到的一个比较好的收获。也提醒自己对网络这一块要深入进去。
+爬虫的调试，也是一件很困难的事情，尤其是对于抢购类型的。是否能够搞一个假的协议服务器，拦截协议，自定义响应的方式编程序。</p>
+<h3 id=抢购类型爬虫>抢购类型爬虫</h3>
+<p>关于抢购类型的爬虫的，统一架构的封装。抽象起来，一定是账号登录，session独立，基于消息总线的触发器。等特殊架构</p>
+<h3 id=github项目star分析>github项目star分析</h3>
+<p>其实很多项目都能实现爬取，但是star最多的那个，表现为，结构完整。功能全有，虽然每个功能有没有很细致的优化。但是完整性很好。包括功能完整性，部署的完整性</p>
+<h3 id=个人爬虫项目的不足对比企业级的爬虫架构>个人爬虫项目的不足对比企业级的爬虫架构</h3>
+<p>个人爬虫项目，大多数的方向，只是一套流程上的跑通。
+但是从架构角度来提升爬虫效率的东西很少。号称干死黄牛党，我估计也太脆了，不堪一击。</p>
+<h2 id=补上一篇媒体文章哈哈真的还挺是那么回事>补上一篇媒体文章，哈哈。真的还挺是那么回事：</h2>
+<p><a href=https://new.qq.com/omn/20210131/20210131A08FG900.html>https://new.qq.com/omn/20210131/20210131A08FG900.html</a></p>
+</section>
+</article>
+</main>
+<div id=gitalk-container></div>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css>
+<script src=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js></script>
+<script>const gitalk=new Gitalk({clientID:'dcf0c61ac0ce08c3c9cc',clientSecret:'a8e5a8b611b5e9083e004ee5f0122095cf7e6f43',repo:'fanlushuai.github.io',owner:'fanlushuai',admin:['fanlushuai'],id:decodeURI(location.pathname),distractionFreeMode:!1});(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('gitalk-container').innerHTML='Gitalk comments not available by default when the website is previewed locally.';return}gitalk.render('gitalk-container')})()</script>
+</div>
+<footer>
+<div class=container>
+<span class=copyright>Many Thanks to Vscode-Github-Hugo-Base16 Developers</span>
+</div>
+</footer>
+</body>
+</html>

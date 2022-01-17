@@ -1,0 +1,249 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=description content>
+<meta name=generator content="Hugo 0.92.0">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-188010236-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=stylesheet href=/css/style.css type=text/css>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type=text/css>
+<link rel=alternate href=/index.xml type=application/rss+xml title=Auh>
+<title>Auh</title>
+</head>
+<body>
+<header>
+<div class="container clearfix">
+<a class=path href>[Auh]</a>
+<span class=caret># _</span>
+<div class=right>
+</div>
+</div>
+</header>
+<div class=container>
+<main role=main class=article>
+<article class=single itemscope itemtype=http://schema.org/BlogPosting>
+<div class=meta>
+<span class=key>published on</span>
+<span class=val><time itemprop=datePublished datetime="2020-12-27 18:10:15">2020-12-27 18:10:15</time></span>
+<span class=key>1595 words</span>
+</div>
+<h1 class=headline itemprop=headline>Java设计(一) 面向过程</h1>
+<section class=body itemprop=articleBody>
+<h1 id=1子父代码执行流程>1.子父代码执行流程</h1>
+<pre tabindex=0><code>
+public class Son extends Father {
+
+    private String name = &quot;Son属性&quot;;
+
+    {
+        System.out.println(&quot;Son，代码块&quot;);
+    }
+
+    static {
+        System.out.println(&quot;Son，静态 代码块&quot;);
+    }
+
+    public Son() {
+        System.out.println(&quot;Son 构造器 执行开始&quot;);
+        System.out.print(&quot;Son-&gt;childOveriddeBaseMethod---&gt;&quot;);
+        childOveriddeBaseMethod();
+        System.out.print(&quot;Son-&gt;this.childOveriddeBaseMethod---&gt;&quot;);
+        this.childOveriddeBaseMethod();
+        System.out.print(&quot;Son-&gt;super.childOveriddeBaseMethod---&gt;&quot;);
+        super.childOveriddeBaseMethod();
+        System.out.print(&quot;Son-&gt;childCommonMethod()---&gt;&quot;);
+        childCommonMethod();
+        System.out.println(&quot;Son 构造器 执行结束&quot;);
+    }
+
+    @Override
+    public void childOveriddeBaseMethod() {
+        System.out.println(&quot;Son-&gt;childOveriddeBaseMethod() ---&gt;&quot; + name);
+    }
+
+    public void childCommonMethod() {
+        System.out.println(&quot;Son-&gt;childCommonMethod() ---&gt;&quot; + name);
+    }
+
+    public static void main(String[] args) {
+        new Son();
+    }
+
+}
+
+
+
+public class Son extends Father {
+
+    private String name = &quot;Son属性&quot;;
+
+    {
+        System.out.println(&quot;Son，代码块&quot;);
+    }
+
+    static {
+        System.out.println(&quot;Son，静态 代码块&quot;);
+    }
+
+    public Son() {
+        System.out.println(&quot;Son 构造器 执行开始&quot;);
+        System.out.print(&quot;Son-&gt;childOveriddeBaseMethod---&gt;&quot;);
+        childOveriddeBaseMethod();
+        System.out.print(&quot;Son-&gt;this.childOveriddeBaseMethod---&gt;&quot;);
+        this.childOveriddeBaseMethod();
+        System.out.print(&quot;Son-&gt;super.childOveriddeBaseMethod---&gt;&quot;);
+        super.childOveriddeBaseMethod();
+        System.out.print(&quot;Son-&gt;childCommonMethod()---&gt;&quot;);
+        childCommonMethod();
+        System.out.println(&quot;Son 构造器 执行结束&quot;);
+    }
+
+    @Override
+    public void childOveriddeBaseMethod() {
+        System.out.println(&quot;Son-&gt;childOveriddeBaseMethod() ---&gt;&quot; + name);
+    }
+
+    public void childCommonMethod() {
+        System.out.println(&quot;Son-&gt;childCommonMethod() ---&gt;&quot; + name);
+    }
+
+    public static void main(String[] args) {
+        new Son();
+    }
+
+}
+
+//输出结果
+//    Father，静态 代码块
+//    Son，静态 代码块
+//    Father，代码块
+//    Father 构造器 执行开始
+//    Father-childOveriddeBaseMethod()---&gt;Son-&gt;childOveriddeBaseMethod() ---&gt;null
+//    Father-this.childOveriddeBaseMethod()---&gt;Son-&gt;childOveriddeBaseMethod() ---&gt;null
+//    Father-baseCommonMethod()---&gt;Father-&gt;baseCommonMethod() --Father属性
+//    Father 构造器 执行结束
+//    Son，代码块
+//    Son 构造器 执行开始
+//    Son-&gt;childOveriddeBaseMethod---&gt;Son-&gt;childOveriddeBaseMethod() ---&gt;Son属性
+//    Son-&gt;this.childOveriddeBaseMethod---&gt;Son-&gt;childOveriddeBaseMethod() ---&gt;Son属性
+//    Son-&gt;super.childOveriddeBaseMethod---&gt;Father-&gt;childOveriddeBaseMethod() --Father属性
+//    Son-&gt;childCommonMethod()---&gt;Son-&gt;childCommonMethod() ---&gt;Son属性
+//    Son 构造器 执行结束
+
+</code></pre><p>1.静态部分
+先父类，后子类
+2. new对象，构造器之前
+初始化类属性。包括普通的代码块
+3.父类构造器先执行
+4.父类构造器执行中，调用子类的重写方法。<strong>会直接调用到子类的重写方法</strong>。此时，<strong>注意</strong>，子类还没有初始化（即，类属性，和普通代码块还未执行）
+5.父类构造器执行完毕。调用子类构造器，子类构造器执行之前。先初始化类属性，包括普通代码块。
+6.调用构造器内的方法。</p>
+<p>总结：</p>
+<ul>
+<li>先父后子</li>
+<li>先静态</li>
+<li>先类属性，后构造器</li>
+<li>重写调重写</li>
+</ul>
+<hr>
+<h1 id=参数传递>参数传递</h1>
+<h2 id=方法参数传递问题>方法参数传递问题</h2>
+<p>参考:https://blog.csdn.net/maoyeqiu/article/details/49250339</p>
+<h3 id=现实业务上的两种需求>现实业务上的两种需求：</h3>
+<ol>
+<li>引用传递：传递一个对象的位置，来共享内存，来操作他。</li>
+<li>值传递：方法内部不改变外部的东西。</li>
+</ol>
+<h3 id=那么在java里面是怎么实现这两种需求的呢>那么在，java里面是怎么实现这两种需求的呢？</h3>
+<ol>
+<li>值传递的实现: 八种基本数据类型和 String(这样理解可以，但是事实上 String 也是传递的地址, 只是 string 对象和其他对象是不同的，string 对象是不能被改变的，内容改变就会产生新对象。那么 StringBuffer 就可以了，但只是改变其内容。不能改变外部变量所指向的内存地址)。</li>
+<li>引用传递的实现：值传递，除 String 以外的所有复合数据类型，包括数组、类和接口 的对象地址</li>
+</ol>
+<h3 id=在go语言中是怎么实现两种需求的强烈建议对比一下>在go语言中，是怎么实现两种需求的？【强烈建议对比一下】</h3>
+<p>参考：https://www.flysnow.org/2018/02/24/golang-function-parameters-passed-by-value.html
+go语言中定义了指针的。java没有指针的概念。</p>
+<p>Go语言中所有的传参都是值传递（传值），都是一个副本，一个拷贝。因为拷贝的内容有时候是非引用类型（int、string、struct等这些），这样就在函数中就无法修改原内容数据；有的是引用类型（指针、map、slice、chan等这些），这样就可以修改原内容数据。</p>
+<p>是否可以修改原内容数据，和传值、传引用没有必然的关系。在C++中，传引用肯定是可以修改原内容数据的，在Go语言里，虽然只有传值，但是我们也可以修改原内容数据，因为参数是引用类型。</p>
+<p>这里也要记住，引用类型和传引用是两个概念。</p>
+<hr>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>FinalTest</span> <span style=color:#f92672>{</span>
+
+    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> String fs1 <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;1.直接赋值&#34;</span><span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> <span style=color:#66d9ef>int</span> finalInt <span style=color:#f92672>=</span> 0<span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> String fs2 <span style=color:#f92672>=</span> <span style=color:#66d9ef>null</span><span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> String fs3<span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> InputObject finalObj<span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>public</span> <span style=color:#a6e22e>FinalTest</span><span style=color:#f92672>(</span>String input<span style=color:#f92672>,</span> InputObject finalObj<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+        <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>fs3</span> <span style=color:#f92672>=</span> input<span style=color:#f92672>;</span>
+        <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>finalObj</span> <span style=color:#f92672>=</span> finalObj<span style=color:#f92672>;</span>
+    <span style=color:#f92672>}</span>
+
+<span style=color:#f92672>}</span>
+<span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>FinalTest</span> <span style=color:#f92672>{</span>
+
+    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> String fs1 <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;1.直接赋值&#34;</span><span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> <span style=color:#66d9ef>int</span> finalInt <span style=color:#f92672>=</span> 0<span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> String fs2 <span style=color:#f92672>=</span> <span style=color:#66d9ef>null</span><span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> String fs3<span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>final</span> InputObject finalObj<span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>public</span> <span style=color:#a6e22e>FinalTest</span><span style=color:#f92672>(</span>String input<span style=color:#f92672>,</span> InputObject finalObj<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+        <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>fs3</span> <span style=color:#f92672>=</span> input<span style=color:#f92672>;</span>
+        <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>finalObj</span> <span style=color:#f92672>=</span> finalObj<span style=color:#f92672>;</span>
+    <span style=color:#f92672>}</span>
+
+<span style=color:#f92672>}</span>
+
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>InputObject</span> <span style=color:#f92672>{</span>
+
+    <span style=color:#66d9ef>private</span> String config<span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>public</span> String <span style=color:#a6e22e>getConfig</span><span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+        <span style=color:#66d9ef>return</span> config<span style=color:#f92672>;</span>
+    <span style=color:#f92672>}</span>
+
+    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>setConfig</span><span style=color:#f92672>(</span>String config<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+        <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>config</span> <span style=color:#f92672>=</span> config<span style=color:#f92672>;</span>
+    <span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
+
+
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>InputObject</span> <span style=color:#f92672>{</span>
+
+    <span style=color:#66d9ef>private</span> String config<span style=color:#f92672>;</span>
+
+    <span style=color:#66d9ef>public</span> String <span style=color:#a6e22e>getConfig</span><span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+        <span style=color:#66d9ef>return</span> config<span style=color:#f92672>;</span>
+    <span style=color:#f92672>}</span>
+
+    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>setConfig</span><span style=color:#f92672>(</span>String config<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+        <span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>config</span> <span style=color:#f92672>=</span> config<span style=color:#f92672>;</span>
+    <span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
+
+</code></pre></div>
+</section>
+</article>
+</main>
+<div id=gitalk-container></div>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css>
+<script src=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js></script>
+<script>const gitalk=new Gitalk({clientID:'dcf0c61ac0ce08c3c9cc',clientSecret:'a8e5a8b611b5e9083e004ee5f0122095cf7e6f43',repo:'fanlushuai.github.io',owner:'fanlushuai',admin:['fanlushuai'],id:decodeURI(location.pathname),distractionFreeMode:!1});(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('gitalk-container').innerHTML='Gitalk comments not available by default when the website is previewed locally.';return}gitalk.render('gitalk-container')})()</script>
+</div>
+<footer>
+<div class=container>
+<span class=copyright>Many Thanks to Vscode-Github-Hugo-Base16 Developers</span>
+</div>
+</footer>
+</body>
+</html>

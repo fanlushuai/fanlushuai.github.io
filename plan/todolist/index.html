@@ -1,0 +1,96 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=description content>
+<meta name=generator content="Hugo 0.92.0">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-188010236-1','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=stylesheet href=/css/style.css type=text/css>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type=text/css>
+<link rel=alternate href=/index.xml type=application/rss+xml title=Auh>
+<title>Auh</title>
+</head>
+<body>
+<header>
+<div class="container clearfix">
+<a class=path href>[Auh]</a>
+<span class=caret># _</span>
+<div class=right>
+</div>
+</div>
+</header>
+<div class=container>
+<main role=main class=article>
+<article class=single itemscope itemtype=http://schema.org/BlogPosting>
+<div class=meta>
+</div>
+<h1 class=headline itemprop=headline>Todolist</h1>
+<section class=body itemprop=articleBody>
+<h2 id=内容问题>内容问题</h2>
+<ul>
+<li><input checked disabled type=checkbox> 网站首页的文章列表没有出现</li>
+<li><input disabled type=checkbox> <del>首页的cata和tags，稍后处理</del></li>
+<li><input checked disabled type=checkbox> 网站的section目录没有出现</li>
+<li><input disabled type=checkbox> 网站的标题</li>
+<li><input disabled type=checkbox> 网站的脚注</li>
+<li><input disabled type=checkbox> <del>网站文章的配色修改</del></li>
+<li><input disabled type=checkbox> 分类以section分</li>
+<li><input disabled type=checkbox> 自动化添加tags 借助分词算法，词云和预制分类协同</li>
+<li><input disabled type=checkbox> 自动化添加创建时 参考https://github.com/Dream4ever/Knowledge-Base/issues/69</li>
+<li><input checked disabled type=checkbox> 自动化处理文章标题</li>
+<li><input disabled type=checkbox> 文章内部添加markdown结构导航</li>
+<li><input checked disabled type=checkbox> 文章默认不公开</li>
+<li><input disabled type=checkbox> 编写新建markdown文件，并且带入模板</li>
+</ul>
+<h2 id=添加组件>添加组件</h2>
+<ul>
+<li><input checked disabled type=checkbox> gittalk <a href=https://xbc.me/add-gittalk-to-hugo/>参考</a></li>
+<li><input checked disabled type=checkbox> 谷歌分析 <a href=http://cloudywithachanceofdevops.com/posts/2018/05/17/setting-up-google-analytics-on-hugo/#step-1-adding-your-site-to-google-analytics>参考</a></li>
+</ul>
+<h2 id=优化问题>优化问题</h2>
+<ul>
+<li><input checked disabled type=checkbox> 图片压缩。https://github.com/marketplace/actions/image-actions</li>
+<li><input disabled type=checkbox> 图片压缩和其他元素分离，加速blog构建过程，去掉不必要的压缩</li>
+<li><input disabled type=checkbox> ~<del>html,css 压缩，这个其实没必要。因为确实很少，没空行就行了</del></li>
+<li><input disabled type=checkbox> <del>静态资源，github TTFB 时间过长。后期找cdn吧。这小破站还是不备案了。cdn就算了。哈哈。</del></li>
+</ul>
+<h2 id=迁移工作>迁移工作</h2>
+<ol>
+<li>图片迁移</li>
+</ol>
+<ul>
+<li><input disabled type=checkbox> 图片复制出来</li>
+<li><input disabled type=checkbox> 图片编写shell脚本进行重命名。命名规则符合当前规则</li>
+</ul>
+<ol start=2>
+<li>文章迁移</li>
+</ol>
+<ul>
+<li><input disabled type=checkbox> 挑选有用的复制出来吧</li>
+<li><input disabled type=checkbox> 后续，抓包的方式，看看接口，能不能进行编写一个迁移</li>
+</ul>
+<h2 id=问题解决杂记>问题解决杂记</h2>
+<p><a href=https://github.com/heartnn/hugo-theme-testo>https://github.com/heartnn/hugo-theme-testo</a>
+<a href=https://hugo.aiaide.com/post/hugo%E6%A8%A1%E6%9D%BF%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/>hugo模板基本语法</a>
+nadao</p>
+<p><img src=/img/AuhBlogImg_2021-01-24-11-54-04.png alt></p>
+<h2 id=博客设计思维>博客设计思维</h2>
+<ul>
+<li><input disabled type=checkbox> 博客的内容层次，和内容层次之间的跳转导致的内容进入感问题的设置。</li>
+</ul>
+</section>
+</article>
+</main>
+<div id=gitalk-container></div>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css>
+<script src=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js></script>
+<script>const gitalk=new Gitalk({clientID:'dcf0c61ac0ce08c3c9cc',clientSecret:'a8e5a8b611b5e9083e004ee5f0122095cf7e6f43',repo:'fanlushuai.github.io',owner:'fanlushuai',admin:['fanlushuai'],id:decodeURI(location.pathname),distractionFreeMode:!1});(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('gitalk-container').innerHTML='Gitalk comments not available by default when the website is previewed locally.';return}gitalk.render('gitalk-container')})()</script>
+</div>
+<footer>
+<div class=container>
+<span class=copyright>Many Thanks to Vscode-Github-Hugo-Base16 Developers</span>
+</div>
+</footer>
+</body>
+</html>
