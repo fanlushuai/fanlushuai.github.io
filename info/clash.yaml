@@ -1,10 +1,6 @@
-# 此配置文件跟随github，并且用于本地配置。clash -f {path}/clash.yaml
-# https://s.trojanflare.com/clashx/16755f99-42d8-4fc8-8831-e35c0c4795c6
-
-##
 port: 7890
 socks-port: 7891
-allow-lan: true
+allow-lan: false
 mode: Rule
 log-level: silent
 external-controller: 127.0.0.1:9090
@@ -36,7 +32,7 @@ dns:
       - +.gvt1.com
 proxies:
   - 
-    name: Germany-DE1-1-Rate:1.0
+    name: 德国-DE1-1-流量倍率:1.0
     type: trojan
     server: de1-1.troiecloud.com
     port: 443
@@ -46,7 +42,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Germany-DE1-2-Rate:1.0
+    name: 德国-DE1-2-流量倍率:1.0
     type: trojan
     server: de1-2.troiecloud.com
     port: 443
@@ -56,7 +52,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Germany-DE1-3-Rate:1.0
+    name: 德国-DE1-3-流量倍率:1.0
     type: trojan
     server: de1-3.troiecloud.com
     port: 443
@@ -66,7 +62,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Germany-DE1-4-Rate:1.0
+    name: 德国-DE1-4-流量倍率:1.0
     type: trojan
     server: de1-4.troiecloud.com
     port: 443
@@ -76,7 +72,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Germany-DE2-1-Rate:1.0
+    name: 德国-DE2-1-流量倍率:1.0
     type: trojan
     server: de2-1.troiecloud.com
     port: 443
@@ -86,7 +82,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Germany-DE2-2-Rate:1.0
+    name: 德国-DE2-2-流量倍率:1.0
     type: trojan
     server: de2-2.troiecloud.com
     port: 443
@@ -96,7 +92,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Germany-DE2-3-Rate:1.0
+    name: 德国-DE2-3-流量倍率:1.0
     type: trojan
     server: de2-3.troiecloud.com
     port: 443
@@ -106,7 +102,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Germany-DE2-4-Rate:1.0
+    name: 德国-DE2-4-流量倍率:1.0
     type: trojan
     server: de2-4.troiecloud.com
     port: 443
@@ -116,7 +112,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Estonia-EE1-1-Rate:0.1
+    name: 爱沙尼亚-EE1-1-流量倍率:0.1
     type: trojan
     server: ee1-1.troiecloud.com
     port: 443
@@ -126,7 +122,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Estonia-EE1-2-Rate:0.1
+    name: 爱沙尼亚-EE1-2-流量倍率:0.1
     type: trojan
     server: ee1-2.troiecloud.com
     port: 443
@@ -136,7 +132,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Estonia-EE1-3-Rate:0.1
+    name: 爱沙尼亚-EE1-3-流量倍率:0.1
     type: trojan
     server: ee1-3.troiecloud.com
     port: 443
@@ -146,7 +142,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Estonia-EE1-4-Rate:0.1
+    name: 爱沙尼亚-EE1-4-流量倍率:0.1
     type: trojan
     server: ee1-4.troiecloud.com
     port: 443
@@ -156,7 +152,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US1-1-Rate:1.5
+    name: 美国-US1-1-流量倍率:1.5
     type: trojan
     server: us1-1.troiecloud.com
     port: 443
@@ -166,7 +162,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US1-2-Rate:1.5
+    name: 美国-US1-2-流量倍率:1.5
     type: trojan
     server: us1-2.troiecloud.com
     port: 443
@@ -176,7 +172,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US1-3-Rate:1.5
+    name: 美国-US1-3-流量倍率:1.5
     type: trojan
     server: us1-3.troiecloud.com
     port: 443
@@ -186,7 +182,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US1-4-Rate:1.5
+    name: 美国-US1-4-流量倍率:1.5
     type: trojan
     server: us1-4.troiecloud.com
     port: 443
@@ -196,7 +192,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US2-1-Rate:1.0
+    name: 美国-US2-1-流量倍率:1.0
     type: trojan
     server: us2-1.troiecloud.com
     port: 443
@@ -206,7 +202,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US2-2-Rate:1.0
+    name: 美国-US2-2-流量倍率:1.0
     type: trojan
     server: us2-2.troiecloud.com
     port: 443
@@ -216,7 +212,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US2-3-Rate:1.0
+    name: 美国-US2-3-流量倍率:1.0
     type: trojan
     server: us2-3.troiecloud.com
     port: 443
@@ -226,7 +222,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US2-4-Rate:1.0
+    name: 美国-US2-4-流量倍率:1.0
     type: trojan
     server: us2-4.troiecloud.com
     port: 443
@@ -236,7 +232,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US3-1-Rate:1.0
+    name: 美国-US3-1-流量倍率:1.0
     type: trojan
     server: us3-1.troiecloud.com
     port: 443
@@ -246,7 +242,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US3-2-Rate:1.0
+    name: 美国-US3-2-流量倍率:1.0
     type: trojan
     server: us3-2.troiecloud.com
     port: 443
@@ -256,7 +252,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US3-3-Rate:1.0
+    name: 美国-US3-3-流量倍率:1.0
     type: trojan
     server: us3-3.troiecloud.com
     port: 443
@@ -266,7 +262,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US3-4-Rate:1.0
+    name: 美国-US3-4-流量倍率:1.0
     type: trojan
     server: us3-4.troiecloud.com
     port: 443
@@ -276,7 +272,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US3-5-Rate:1.0
+    name: 美国-US3-5-流量倍率:1.0
     type: trojan
     server: us3-5.troiecloud.com
     port: 443
@@ -286,7 +282,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US3-6-Rate:1.0
+    name: 美国-US3-6-流量倍率:1.0
     type: trojan
     server: us3-6.troiecloud.com
     port: 443
@@ -296,7 +292,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US3-7-Rate:1.0
+    name: 美国-US3-7-流量倍率:1.0
     type: trojan
     server: us3-7.troiecloud.com
     port: 443
@@ -306,7 +302,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-US3-8-Rate:1.0
+    name: 美国-US3-8-流量倍率:1.0
     type: trojan
     server: us3-8.troiecloud.com
     port: 443
@@ -316,7 +312,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: HongKong-HK1-1-Rate:0.5
+    name: 香港-HK1-1-流量倍率:0.5
     type: trojan
     server: hk1-1.troiecloud.com
     port: 443
@@ -326,7 +322,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: HongKong-HK1-2-Rate:0.5
+    name: 香港-HK1-2-流量倍率:0.5
     type: trojan
     server: hk1-2.troiecloud.com
     port: 443
@@ -336,7 +332,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: HongKong-HK1-3-Rate:0.5
+    name: 香港-HK1-3-流量倍率:0.5
     type: trojan
     server: hk1-3.troiecloud.com
     port: 443
@@ -346,7 +342,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: HongKong-HK1-4-Rate:0.5
+    name: 香港-HK1-4-流量倍率:0.5
     type: trojan
     server: hk1-4.troiecloud.com
     port: 443
@@ -356,7 +352,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: HongKong-HK1-5-Rate:0.5
+    name: 香港-HK1-5-流量倍率:0.5
     type: trojan
     server: hk1-5.troiecloud.com
     port: 443
@@ -366,7 +362,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: HongKong-HK1-6-Rate:0.5
+    name: 香港-HK1-6-流量倍率:0.5
     type: trojan
     server: hk1-6.troiecloud.com
     port: 443
@@ -376,7 +372,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: HongKong-HK1-7-Rate:0.5
+    name: 香港-HK1-7-流量倍率:0.5
     type: trojan
     server: hk1-7.troiecloud.com
     port: 443
@@ -386,7 +382,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: HongKong-HK1-8-Rate:0.5
+    name: 香港-HK1-8-流量倍率:0.5
     type: trojan
     server: hk1-8.troiecloud.com
     port: 443
@@ -396,7 +392,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Taiwan-TW1-1-Rate:0.5
+    name: 台湾-TW1-1-流量倍率:0.5
     type: trojan
     server: tw1-1.troiecloud.com
     port: 443
@@ -406,7 +402,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Taiwan-TW1-2-Rate:0.5
+    name: 台湾-TW1-2-流量倍率:0.5
     type: trojan
     server: tw1-2.troiecloud.com
     port: 443
@@ -416,7 +412,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Taiwan-TW1-3-Rate:0.5
+    name: 台湾-TW1-3-流量倍率:0.5
     type: trojan
     server: tw1-3.troiecloud.com
     port: 443
@@ -426,7 +422,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Taiwan-TW1-4-Rate:0.5
+    name: 台湾-TW1-4-流量倍率:0.5
     type: trojan
     server: tw1-4.troiecloud.com
     port: 443
@@ -436,7 +432,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY1-1-Rate:1.0
+    name: 日本-TY1-1-流量倍率:1.0
     type: trojan
     server: ty1-1.troiecloud.com
     port: 443
@@ -446,7 +442,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY1-2-Rate:1.0
+    name: 日本-TY1-2-流量倍率:1.0
     type: trojan
     server: ty1-2.troiecloud.com
     port: 443
@@ -456,7 +452,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY1-3-Rate:1.0
+    name: 日本-TY1-3-流量倍率:1.0
     type: trojan
     server: ty1-3.troiecloud.com
     port: 443
@@ -466,7 +462,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY1-4-Rate:1.0
+    name: 日本-TY1-4-流量倍率:1.0
     type: trojan
     server: ty1-4.troiecloud.com
     port: 443
@@ -476,7 +472,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY2-1-Rate:1.0
+    name: 日本-TY2-1-流量倍率:1.0
     type: trojan
     server: ty2-1.troiecloud.com
     port: 443
@@ -486,7 +482,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY2-2-Rate:1.0
+    name: 日本-TY2-2-流量倍率:1.0
     type: trojan
     server: ty2-2.troiecloud.com
     port: 443
@@ -496,7 +492,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY2-3-Rate:1.0
+    name: 日本-TY2-3-流量倍率:1.0
     type: trojan
     server: ty2-3.troiecloud.com
     port: 443
@@ -506,7 +502,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY2-4-Rate:1.0
+    name: 日本-TY2-4-流量倍率:1.0
     type: trojan
     server: ty2-4.troiecloud.com
     port: 443
@@ -516,7 +512,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY2-5-Rate:1.0
+    name: 日本-TY2-5-流量倍率:1.0
     type: trojan
     server: ty2-5.troiecloud.com
     port: 443
@@ -526,7 +522,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY2-6-Rate:1.0
+    name: 日本-TY2-6-流量倍率:1.0
     type: trojan
     server: ty2-6.troiecloud.com
     port: 443
@@ -536,7 +532,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY2-7-Rate:1.0
+    name: 日本-TY2-7-流量倍率:1.0
     type: trojan
     server: ty2-7.troiecloud.com
     port: 443
@@ -546,7 +542,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-TY2-8-Rate:1.0
+    name: 日本-TY2-8-流量倍率:1.0
     type: trojan
     server: ty2-8.troiecloud.com
     port: 443
@@ -556,7 +552,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS1-1-Rate:1.0
+    name: 日本-OS1-1-流量倍率:1.0
     type: trojan
     server: os1-1.troiecloud.com
     port: 443
@@ -566,7 +562,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS1-2-Rate:1.0
+    name: 日本-OS1-2-流量倍率:1.0
     type: trojan
     server: os1-2.troiecloud.com
     port: 443
@@ -576,7 +572,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS1-3-Rate:1.0
+    name: 日本-OS1-3-流量倍率:1.0
     type: trojan
     server: os1-3.troiecloud.com
     port: 443
@@ -586,7 +582,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS1-4-Rate:1.0
+    name: 日本-OS1-4-流量倍率:1.0
     type: trojan
     server: os1-4.troiecloud.com
     port: 443
@@ -596,7 +592,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS1-5-Rate:1.0
+    name: 日本-OS1-5-流量倍率:1.0
     type: trojan
     server: os1-5.troiecloud.com
     port: 443
@@ -606,7 +602,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS1-6-Rate:1.0
+    name: 日本-OS1-6-流量倍率:1.0
     type: trojan
     server: os1-6.troiecloud.com
     port: 443
@@ -616,7 +612,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS1-7-Rate:1.0
+    name: 日本-OS1-7-流量倍率:1.0
     type: trojan
     server: os1-7.troiecloud.com
     port: 443
@@ -626,7 +622,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS1-8-Rate:1.0
+    name: 日本-OS1-8-流量倍率:1.0
     type: trojan
     server: os1-8.troiecloud.com
     port: 443
@@ -636,7 +632,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS2-1-Rate:1.0
+    name: 日本-OS2-1-流量倍率:1.0
     type: trojan
     server: os2-1.troiecloud.com
     port: 443
@@ -646,7 +642,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS2-2-Rate:1.0
+    name: 日本-OS2-2-流量倍率:1.0
     type: trojan
     server: os2-2.troiecloud.com
     port: 443
@@ -656,7 +652,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS2-3-Rate:1.0
+    name: 日本-OS2-3-流量倍率:1.0
     type: trojan
     server: os2-3.troiecloud.com
     port: 443
@@ -666,7 +662,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS2-4-Rate:1.0
+    name: 日本-OS2-4-流量倍率:1.0
     type: trojan
     server: os2-4.troiecloud.com
     port: 443
@@ -676,7 +672,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS2-5-Rate:1.0
+    name: 日本-OS2-5-流量倍率:1.0
     type: trojan
     server: os2-5.troiecloud.com
     port: 443
@@ -686,7 +682,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS2-6-Rate:1.0
+    name: 日本-OS2-6-流量倍率:1.0
     type: trojan
     server: os2-6.troiecloud.com
     port: 443
@@ -696,7 +692,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS2-7-Rate:1.0
+    name: 日本-OS2-7-流量倍率:1.0
     type: trojan
     server: os2-7.troiecloud.com
     port: 443
@@ -706,7 +702,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-OS2-8-Rate:1.0
+    name: 日本-OS2-8-流量倍率:1.0
     type: trojan
     server: os2-8.troiecloud.com
     port: 443
@@ -716,7 +712,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Netherlands-NL1-1-Rate:0.5
+    name: 荷兰-NL1-1-流量倍率:0.5
     type: trojan
     server: nl1-1.troiecloud.com
     port: 443
@@ -726,7 +722,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Netherlands-NL1-2-Rate:0.5
+    name: 荷兰-NL1-2-流量倍率:0.5
     type: trojan
     server: nl1-2.troiecloud.com
     port: 443
@@ -736,7 +732,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Netherlands-NL1-3-Rate:0.5
+    name: 荷兰-NL1-3-流量倍率:0.5
     type: trojan
     server: nl1-3.troiecloud.com
     port: 443
@@ -746,7 +742,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Netherlands-NL1-4-Rate:0.5
+    name: 荷兰-NL1-4-流量倍率:0.5
     type: trojan
     server: nl1-4.troiecloud.com
     port: 443
@@ -756,7 +752,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Netherlands-NL1-5-Rate:0.5
+    name: 荷兰-NL1-5-流量倍率:0.5
     type: trojan
     server: nl1-5.troiecloud.com
     port: 443
@@ -766,7 +762,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Netherlands-NL1-6-Rate:0.5
+    name: 荷兰-NL1-6-流量倍率:0.5
     type: trojan
     server: nl1-6.troiecloud.com
     port: 443
@@ -776,7 +772,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Netherlands-NL1-7-Rate:0.5
+    name: 荷兰-NL1-7-流量倍率:0.5
     type: trojan
     server: nl1-7.troiecloud.com
     port: 443
@@ -786,7 +782,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Netherlands-NL1-8-Rate:0.5
+    name: 荷兰-NL1-8-流量倍率:0.5
     type: trojan
     server: nl1-8.troiecloud.com
     port: 443
@@ -796,7 +792,87 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedKingdom-UK1-1-Rate:1.0
+    name: 荷兰-NL3-1-流量倍率:0.1
+    type: trojan
+    server: nl3-1.troiecloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 荷兰-NL3-2-流量倍率:0.1
+    type: trojan
+    server: nl3-2.troiecloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 荷兰-NL3-3-流量倍率:0.1
+    type: trojan
+    server: nl3-3.troiecloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 荷兰-NL3-4-流量倍率:0.1
+    type: trojan
+    server: nl3-4.troiecloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 荷兰-NL3-5-流量倍率:0.1
+    type: trojan
+    server: nl3-5.troiecloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 荷兰-NL3-6-流量倍率:0.1
+    type: trojan
+    server: nl3-6.troiecloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 荷兰-NL3-7-流量倍率:0.1
+    type: trojan
+    server: nl3-7.troiecloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 荷兰-NL3-8-流量倍率:0.1
+    type: trojan
+    server: nl3-8.troiecloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 英国-UK1-1-流量倍率:1.0
     type: trojan
     server: uk1-1.troiecloud.com
     port: 443
@@ -806,7 +882,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedKingdom-UK1-2-Rate:1.0
+    name: 英国-UK1-2-流量倍率:1.0
     type: trojan
     server: uk1-2.troiecloud.com
     port: 443
@@ -816,7 +892,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedKingdom-UK1-3-Rate:1.0
+    name: 英国-UK1-3-流量倍率:1.0
     type: trojan
     server: uk1-3.troiecloud.com
     port: 443
@@ -826,7 +902,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedKingdom-UK1-4-Rate:1.0
+    name: 英国-UK1-4-流量倍率:1.0
     type: trojan
     server: uk1-4.troiecloud.com
     port: 443
@@ -836,7 +912,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Australia-AU1-1-Rate:1.0
+    name: 澳大利亚-AU1-1-流量倍率:1.0
     type: trojan
     server: au1-1.troiecloud.com
     port: 443
@@ -846,7 +922,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Australia-AU1-2-Rate:1.0
+    name: 澳大利亚-AU1-2-流量倍率:1.0
     type: trojan
     server: au1-2.troiecloud.com
     port: 443
@@ -856,7 +932,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Australia-AU1-3-Rate:1.0
+    name: 澳大利亚-AU1-3-流量倍率:1.0
     type: trojan
     server: au1-3.troiecloud.com
     port: 443
@@ -866,7 +942,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Australia-AU1-4-Rate:1.0
+    name: 澳大利亚-AU1-4-流量倍率:1.0
     type: trojan
     server: au1-4.troiecloud.com
     port: 443
@@ -876,7 +952,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: UnitedStates-V6-1-Rate:1.0
+    name: 美国-V6-1-流量倍率:1.0
     type: trojan
     server: v6-1.troiecloud.com
     port: 443
@@ -886,7 +962,7 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: Japan-V6-2-Rate:1.0
+    name: 日本-V6-2-流量倍率:1.0
     type: trojan
     server: v6-2.troiecloud.com
     port: 443
@@ -896,9 +972,19 @@ proxies:
       - http/1.1
     skip-cert-verify: true
   - 
-    name: HongKong-V6-3-Rate:0.5
+    name: 香港-V6-3-流量倍率:0.5
     type: trojan
     server: v6-3.troiecloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 荷兰-V6-4-流量倍率:0.1
+    type: trojan
+    server: v6-4.troiecloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -912,186 +998,219 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Germany-DE1-1-Rate:1.0
-      - Germany-DE1-2-Rate:1.0
-      - Germany-DE1-3-Rate:1.0
-      - Germany-DE1-4-Rate:1.0
-      - Germany-DE2-1-Rate:1.0
-      - Germany-DE2-2-Rate:1.0
-      - Germany-DE2-3-Rate:1.0
-      - Germany-DE2-4-Rate:1.0
-      - Estonia-EE1-1-Rate:0.1
-      - Estonia-EE1-2-Rate:0.1
-      - Estonia-EE1-3-Rate:0.1
-      - Estonia-EE1-4-Rate:0.1
-      - UnitedStates-US1-1-Rate:1.5
-      - UnitedStates-US1-2-Rate:1.5
-      - UnitedStates-US1-3-Rate:1.5
-      - UnitedStates-US1-4-Rate:1.5
-      - UnitedStates-US2-1-Rate:1.0
-      - UnitedStates-US2-2-Rate:1.0
-      - UnitedStates-US2-3-Rate:1.0
-      - UnitedStates-US2-4-Rate:1.0
-      - UnitedStates-US3-1-Rate:1.0
-      - UnitedStates-US3-2-Rate:1.0
-      - UnitedStates-US3-3-Rate:1.0
-      - UnitedStates-US3-4-Rate:1.0
-      - UnitedStates-US3-5-Rate:1.0
-      - UnitedStates-US3-6-Rate:1.0
-      - UnitedStates-US3-7-Rate:1.0
-      - UnitedStates-US3-8-Rate:1.0
-      - HongKong-HK1-1-Rate:0.5
-      - HongKong-HK1-2-Rate:0.5
-      - HongKong-HK1-3-Rate:0.5
-      - HongKong-HK1-4-Rate:0.5
-      - HongKong-HK1-5-Rate:0.5
-      - HongKong-HK1-6-Rate:0.5
-      - HongKong-HK1-7-Rate:0.5
-      - HongKong-HK1-8-Rate:0.5
-      - Taiwan-TW1-1-Rate:0.5
-      - Taiwan-TW1-2-Rate:0.5
-      - Taiwan-TW1-3-Rate:0.5
-      - Taiwan-TW1-4-Rate:0.5
-      - Japan-TY1-1-Rate:1.0
-      - Japan-TY1-2-Rate:1.0
-      - Japan-TY1-3-Rate:1.0
-      - Japan-TY1-4-Rate:1.0
-      - Japan-TY2-1-Rate:1.0
-      - Japan-TY2-2-Rate:1.0
-      - Japan-TY2-3-Rate:1.0
-      - Japan-TY2-4-Rate:1.0
-      - Japan-TY2-5-Rate:1.0
-      - Japan-TY2-6-Rate:1.0
-      - Japan-TY2-7-Rate:1.0
-      - Japan-TY2-8-Rate:1.0
-      - Japan-OS1-1-Rate:1.0
-      - Japan-OS1-2-Rate:1.0
-      - Japan-OS1-3-Rate:1.0
-      - Japan-OS1-4-Rate:1.0
-      - Japan-OS1-5-Rate:1.0
-      - Japan-OS1-6-Rate:1.0
-      - Japan-OS1-7-Rate:1.0
-      - Japan-OS1-8-Rate:1.0
-      - Japan-OS2-1-Rate:1.0
-      - Japan-OS2-2-Rate:1.0
-      - Japan-OS2-3-Rate:1.0
-      - Japan-OS2-4-Rate:1.0
-      - Japan-OS2-5-Rate:1.0
-      - Japan-OS2-6-Rate:1.0
-      - Japan-OS2-7-Rate:1.0
-      - Japan-OS2-8-Rate:1.0
-      - Netherlands-NL1-1-Rate:0.5
-      - Netherlands-NL1-2-Rate:0.5
-      - Netherlands-NL1-3-Rate:0.5
-      - Netherlands-NL1-4-Rate:0.5
-      - Netherlands-NL1-5-Rate:0.5
-      - Netherlands-NL1-6-Rate:0.5
-      - Netherlands-NL1-7-Rate:0.5
-      - Netherlands-NL1-8-Rate:0.5
-      - UnitedKingdom-UK1-1-Rate:1.0
-      - UnitedKingdom-UK1-2-Rate:1.0
-      - UnitedKingdom-UK1-3-Rate:1.0
-      - UnitedKingdom-UK1-4-Rate:1.0
-      - Australia-AU1-1-Rate:1.0
-      - Australia-AU1-2-Rate:1.0
-      - Australia-AU1-3-Rate:1.0
-      - Australia-AU1-4-Rate:1.0
-      - UnitedStates-V6-1-Rate:1.0
-      - Japan-V6-2-Rate:1.0
-      - HongKong-V6-3-Rate:0.5
+      - 德国-DE1-1-流量倍率:1.0
+      - 德国-DE1-2-流量倍率:1.0
+      - 德国-DE1-3-流量倍率:1.0
+      - 德国-DE1-4-流量倍率:1.0
+      - 德国-DE2-1-流量倍率:1.0
+      - 德国-DE2-2-流量倍率:1.0
+      - 德国-DE2-3-流量倍率:1.0
+      - 德国-DE2-4-流量倍率:1.0
+      - 爱沙尼亚-EE1-1-流量倍率:0.1
+      - 爱沙尼亚-EE1-2-流量倍率:0.1
+      - 爱沙尼亚-EE1-3-流量倍率:0.1
+      - 爱沙尼亚-EE1-4-流量倍率:0.1
+      - 美国-US1-1-流量倍率:1.5
+      - 美国-US1-2-流量倍率:1.5
+      - 美国-US1-3-流量倍率:1.5
+      - 美国-US1-4-流量倍率:1.5
+      - 美国-US2-1-流量倍率:1.0
+      - 美国-US2-2-流量倍率:1.0
+      - 美国-US2-3-流量倍率:1.0
+      - 美国-US2-4-流量倍率:1.0
+      - 美国-US3-1-流量倍率:1.0
+      - 美国-US3-2-流量倍率:1.0
+      - 美国-US3-3-流量倍率:1.0
+      - 美国-US3-4-流量倍率:1.0
+      - 美国-US3-5-流量倍率:1.0
+      - 美国-US3-6-流量倍率:1.0
+      - 美国-US3-7-流量倍率:1.0
+      - 美国-US3-8-流量倍率:1.0
+      - 香港-HK1-1-流量倍率:0.5
+      - 香港-HK1-2-流量倍率:0.5
+      - 香港-HK1-3-流量倍率:0.5
+      - 香港-HK1-4-流量倍率:0.5
+      - 香港-HK1-5-流量倍率:0.5
+      - 香港-HK1-6-流量倍率:0.5
+      - 香港-HK1-7-流量倍率:0.5
+      - 香港-HK1-8-流量倍率:0.5
+      - 台湾-TW1-1-流量倍率:0.5
+      - 台湾-TW1-2-流量倍率:0.5
+      - 台湾-TW1-3-流量倍率:0.5
+      - 台湾-TW1-4-流量倍率:0.5
+      - 日本-TY1-1-流量倍率:1.0
+      - 日本-TY1-2-流量倍率:1.0
+      - 日本-TY1-3-流量倍率:1.0
+      - 日本-TY1-4-流量倍率:1.0
+      - 日本-TY2-1-流量倍率:1.0
+      - 日本-TY2-2-流量倍率:1.0
+      - 日本-TY2-3-流量倍率:1.0
+      - 日本-TY2-4-流量倍率:1.0
+      - 日本-TY2-5-流量倍率:1.0
+      - 日本-TY2-6-流量倍率:1.0
+      - 日本-TY2-7-流量倍率:1.0
+      - 日本-TY2-8-流量倍率:1.0
+      - 日本-OS1-1-流量倍率:1.0
+      - 日本-OS1-2-流量倍率:1.0
+      - 日本-OS1-3-流量倍率:1.0
+      - 日本-OS1-4-流量倍率:1.0
+      - 日本-OS1-5-流量倍率:1.0
+      - 日本-OS1-6-流量倍率:1.0
+      - 日本-OS1-7-流量倍率:1.0
+      - 日本-OS1-8-流量倍率:1.0
+      - 日本-OS2-1-流量倍率:1.0
+      - 日本-OS2-2-流量倍率:1.0
+      - 日本-OS2-3-流量倍率:1.0
+      - 日本-OS2-4-流量倍率:1.0
+      - 日本-OS2-5-流量倍率:1.0
+      - 日本-OS2-6-流量倍率:1.0
+      - 日本-OS2-7-流量倍率:1.0
+      - 日本-OS2-8-流量倍率:1.0
+      - 荷兰-NL1-1-流量倍率:0.5
+      - 荷兰-NL1-2-流量倍率:0.5
+      - 荷兰-NL1-3-流量倍率:0.5
+      - 荷兰-NL1-4-流量倍率:0.5
+      - 荷兰-NL1-5-流量倍率:0.5
+      - 荷兰-NL1-6-流量倍率:0.5
+      - 荷兰-NL1-7-流量倍率:0.5
+      - 荷兰-NL1-8-流量倍率:0.5
+      - 荷兰-NL3-1-流量倍率:0.1
+      - 荷兰-NL3-2-流量倍率:0.1
+      - 荷兰-NL3-3-流量倍率:0.1
+      - 荷兰-NL3-4-流量倍率:0.1
+      - 荷兰-NL3-5-流量倍率:0.1
+      - 荷兰-NL3-6-流量倍率:0.1
+      - 荷兰-NL3-7-流量倍率:0.1
+      - 荷兰-NL3-8-流量倍率:0.1
+      - 英国-UK1-1-流量倍率:1.0
+      - 英国-UK1-2-流量倍率:1.0
+      - 英国-UK1-3-流量倍率:1.0
+      - 英国-UK1-4-流量倍率:1.0
+      - 澳大利亚-AU1-1-流量倍率:1.0
+      - 澳大利亚-AU1-2-流量倍率:1.0
+      - 澳大利亚-AU1-3-流量倍率:1.0
+      - 澳大利亚-AU1-4-流量倍率:1.0
+      - 美国-V6-1-流量倍率:1.0
+      - 日本-V6-2-流量倍率:1.0
+      - 香港-V6-3-流量倍率:0.5
+      - 荷兰-V6-4-流量倍率:0.1
   - 
     name: Proxy
     type: select
     proxies:
       - Auto
-      - Germany-DE1-1-Rate:1.0
-      - Germany-DE1-2-Rate:1.0
-      - Germany-DE1-3-Rate:1.0
-      - Germany-DE1-4-Rate:1.0
-      - Germany-DE2-1-Rate:1.0
-      - Germany-DE2-2-Rate:1.0
-      - Germany-DE2-3-Rate:1.0
-      - Germany-DE2-4-Rate:1.0
-      - Estonia-EE1-1-Rate:0.1
-      - Estonia-EE1-2-Rate:0.1
-      - Estonia-EE1-3-Rate:0.1
-      - Estonia-EE1-4-Rate:0.1
-      - UnitedStates-US1-1-Rate:1.5
-      - UnitedStates-US1-2-Rate:1.5
-      - UnitedStates-US1-3-Rate:1.5
-      - UnitedStates-US1-4-Rate:1.5
-      - UnitedStates-US2-1-Rate:1.0
-      - UnitedStates-US2-2-Rate:1.0
-      - UnitedStates-US2-3-Rate:1.0
-      - UnitedStates-US2-4-Rate:1.0
-      - UnitedStates-US3-1-Rate:1.0
-      - UnitedStates-US3-2-Rate:1.0
-      - UnitedStates-US3-3-Rate:1.0
-      - UnitedStates-US3-4-Rate:1.0
-      - UnitedStates-US3-5-Rate:1.0
-      - UnitedStates-US3-6-Rate:1.0
-      - UnitedStates-US3-7-Rate:1.0
-      - UnitedStates-US3-8-Rate:1.0
-      - HongKong-HK1-1-Rate:0.5
-      - HongKong-HK1-2-Rate:0.5
-      - HongKong-HK1-3-Rate:0.5
-      - HongKong-HK1-4-Rate:0.5
-      - HongKong-HK1-5-Rate:0.5
-      - HongKong-HK1-6-Rate:0.5
-      - HongKong-HK1-7-Rate:0.5
-      - HongKong-HK1-8-Rate:0.5
-      - Taiwan-TW1-1-Rate:0.5
-      - Taiwan-TW1-2-Rate:0.5
-      - Taiwan-TW1-3-Rate:0.5
-      - Taiwan-TW1-4-Rate:0.5
-      - Japan-TY1-1-Rate:1.0
-      - Japan-TY1-2-Rate:1.0
-      - Japan-TY1-3-Rate:1.0
-      - Japan-TY1-4-Rate:1.0
-      - Japan-TY2-1-Rate:1.0
-      - Japan-TY2-2-Rate:1.0
-      - Japan-TY2-3-Rate:1.0
-      - Japan-TY2-4-Rate:1.0
-      - Japan-TY2-5-Rate:1.0
-      - Japan-TY2-6-Rate:1.0
-      - Japan-TY2-7-Rate:1.0
-      - Japan-TY2-8-Rate:1.0
-      - Japan-OS1-1-Rate:1.0
-      - Japan-OS1-2-Rate:1.0
-      - Japan-OS1-3-Rate:1.0
-      - Japan-OS1-4-Rate:1.0
-      - Japan-OS1-5-Rate:1.0
-      - Japan-OS1-6-Rate:1.0
-      - Japan-OS1-7-Rate:1.0
-      - Japan-OS1-8-Rate:1.0
-      - Japan-OS2-1-Rate:1.0
-      - Japan-OS2-2-Rate:1.0
-      - Japan-OS2-3-Rate:1.0
-      - Japan-OS2-4-Rate:1.0
-      - Japan-OS2-5-Rate:1.0
-      - Japan-OS2-6-Rate:1.0
-      - Japan-OS2-7-Rate:1.0
-      - Japan-OS2-8-Rate:1.0
-      - Netherlands-NL1-1-Rate:0.5
-      - Netherlands-NL1-2-Rate:0.5
-      - Netherlands-NL1-3-Rate:0.5
-      - Netherlands-NL1-4-Rate:0.5
-      - Netherlands-NL1-5-Rate:0.5
-      - Netherlands-NL1-6-Rate:0.5
-      - Netherlands-NL1-7-Rate:0.5
-      - Netherlands-NL1-8-Rate:0.5
-      - UnitedKingdom-UK1-1-Rate:1.0
-      - UnitedKingdom-UK1-2-Rate:1.0
-      - UnitedKingdom-UK1-3-Rate:1.0
-      - UnitedKingdom-UK1-4-Rate:1.0
-      - Australia-AU1-1-Rate:1.0
-      - Australia-AU1-2-Rate:1.0
-      - Australia-AU1-3-Rate:1.0
-      - Australia-AU1-4-Rate:1.0
-      - UnitedStates-V6-1-Rate:1.0
-      - Japan-V6-2-Rate:1.0
-      - HongKong-V6-3-Rate:0.5
+      - 德国-DE1-1-流量倍率:1.0
+      - 德国-DE1-2-流量倍率:1.0
+      - 德国-DE1-3-流量倍率:1.0
+      - 德国-DE1-4-流量倍率:1.0
+      - 德国-DE2-1-流量倍率:1.0
+      - 德国-DE2-2-流量倍率:1.0
+      - 德国-DE2-3-流量倍率:1.0
+      - 德国-DE2-4-流量倍率:1.0
+      - 爱沙尼亚-EE1-1-流量倍率:0.1
+      - 爱沙尼亚-EE1-2-流量倍率:0.1
+      - 爱沙尼亚-EE1-3-流量倍率:0.1
+      - 爱沙尼亚-EE1-4-流量倍率:0.1
+      - 美国-US1-1-流量倍率:1.5
+      - 美国-US1-2-流量倍率:1.5
+      - 美国-US1-3-流量倍率:1.5
+      - 美国-US1-4-流量倍率:1.5
+      - 美国-US2-1-流量倍率:1.0
+      - 美国-US2-2-流量倍率:1.0
+      - 美国-US2-3-流量倍率:1.0
+      - 美国-US2-4-流量倍率:1.0
+      - 美国-US3-1-流量倍率:1.0
+      - 美国-US3-2-流量倍率:1.0
+      - 美国-US3-3-流量倍率:1.0
+      - 美国-US3-4-流量倍率:1.0
+      - 美国-US3-5-流量倍率:1.0
+      - 美国-US3-6-流量倍率:1.0
+      - 美国-US3-7-流量倍率:1.0
+      - 美国-US3-8-流量倍率:1.0
+      - 香港-HK1-1-流量倍率:0.5
+      - 香港-HK1-2-流量倍率:0.5
+      - 香港-HK1-3-流量倍率:0.5
+      - 香港-HK1-4-流量倍率:0.5
+      - 香港-HK1-5-流量倍率:0.5
+      - 香港-HK1-6-流量倍率:0.5
+      - 香港-HK1-7-流量倍率:0.5
+      - 香港-HK1-8-流量倍率:0.5
+      - 台湾-TW1-1-流量倍率:0.5
+      - 台湾-TW1-2-流量倍率:0.5
+      - 台湾-TW1-3-流量倍率:0.5
+      - 台湾-TW1-4-流量倍率:0.5
+      - 日本-TY1-1-流量倍率:1.0
+      - 日本-TY1-2-流量倍率:1.0
+      - 日本-TY1-3-流量倍率:1.0
+      - 日本-TY1-4-流量倍率:1.0
+      - 日本-TY2-1-流量倍率:1.0
+      - 日本-TY2-2-流量倍率:1.0
+      - 日本-TY2-3-流量倍率:1.0
+      - 日本-TY2-4-流量倍率:1.0
+      - 日本-TY2-5-流量倍率:1.0
+      - 日本-TY2-6-流量倍率:1.0
+      - 日本-TY2-7-流量倍率:1.0
+      - 日本-TY2-8-流量倍率:1.0
+      - 日本-OS1-1-流量倍率:1.0
+      - 日本-OS1-2-流量倍率:1.0
+      - 日本-OS1-3-流量倍率:1.0
+      - 日本-OS1-4-流量倍率:1.0
+      - 日本-OS1-5-流量倍率:1.0
+      - 日本-OS1-6-流量倍率:1.0
+      - 日本-OS1-7-流量倍率:1.0
+      - 日本-OS1-8-流量倍率:1.0
+      - 日本-OS2-1-流量倍率:1.0
+      - 日本-OS2-2-流量倍率:1.0
+      - 日本-OS2-3-流量倍率:1.0
+      - 日本-OS2-4-流量倍率:1.0
+      - 日本-OS2-5-流量倍率:1.0
+      - 日本-OS2-6-流量倍率:1.0
+      - 日本-OS2-7-流量倍率:1.0
+      - 日本-OS2-8-流量倍率:1.0
+      - 荷兰-NL1-1-流量倍率:0.5
+      - 荷兰-NL1-2-流量倍率:0.5
+      - 荷兰-NL1-3-流量倍率:0.5
+      - 荷兰-NL1-4-流量倍率:0.5
+      - 荷兰-NL1-5-流量倍率:0.5
+      - 荷兰-NL1-6-流量倍率:0.5
+      - 荷兰-NL1-7-流量倍率:0.5
+      - 荷兰-NL1-8-流量倍率:0.5
+      - 荷兰-NL3-1-流量倍率:0.1
+      - 荷兰-NL3-2-流量倍率:0.1
+      - 荷兰-NL3-3-流量倍率:0.1
+      - 荷兰-NL3-4-流量倍率:0.1
+      - 荷兰-NL3-5-流量倍率:0.1
+      - 荷兰-NL3-6-流量倍率:0.1
+      - 荷兰-NL3-7-流量倍率:0.1
+      - 荷兰-NL3-8-流量倍率:0.1
+      - 英国-UK1-1-流量倍率:1.0
+      - 英国-UK1-2-流量倍率:1.0
+      - 英国-UK1-3-流量倍率:1.0
+      - 英国-UK1-4-流量倍率:1.0
+      - 澳大利亚-AU1-1-流量倍率:1.0
+      - 澳大利亚-AU1-2-流量倍率:1.0
+      - 澳大利亚-AU1-3-流量倍率:1.0
+      - 澳大利亚-AU1-4-流量倍率:1.0
+      - 美国-V6-1-流量倍率:1.0
+      - 日本-V6-2-流量倍率:1.0
+      - 香港-V6-3-流量倍率:0.5
+      - 荷兰-V6-4-流量倍率:0.1
 rules:
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,DIRECT
+  - RULE-SET,proxy,Proxy
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,Proxy
+  - GEOIP,,DIRECT
+  - GEOIP,CN,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,Proxy
   - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
   - DOMAIN,safebrowsing.googleapis.com,DIRECT
@@ -1172,7 +1291,7 @@ rules:
   - DOMAIN-SUFFIX,lecloud.com,DIRECT
   - DOMAIN-SUFFIX,lemicp.com,DIRECT
   - DOMAIN-SUFFIX,licdn.com,DIRECT
-  - DOMAIN-SUFFIX,linkedin.com,DIRECT
+  - DOMAIN-SUFFIX,linkedin.com,Proxy
   - DOMAIN-SUFFIX,luoo.net,DIRECT
   - DOMAIN-SUFFIX,meituan.com,DIRECT
   - DOMAIN-SUFFIX,meituan.net,DIRECT
@@ -1569,3 +1688,101 @@ rules:
   - GEOIP,CN,DIRECT
   - MATCH,Proxy
 
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  private:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
+    path: ./ruleset/private.yaml
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+  applications:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
+    path: ./ruleset/applications.yaml
+    interval: 86400
