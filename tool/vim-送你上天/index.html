@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=description content>
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.1">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-188010236-1','auto'),ga('send','pageview'))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
@@ -26,7 +26,7 @@
 <div class=meta>
 <span class=key>published on</span>
 <span class=val><time itemprop=datePublished datetime="2016-10-19 22:22:05">2016-10-19 22:22:05</time></span>
-<span class=key>3251 words</span>
+<span class=key>3414 words</span>
 </div>
 <h1 class=headline itemprop=headline>Vim 送你上天</h1>
 <section class=body itemprop=articleBody>
@@ -137,6 +137,7 @@ ctrl+v Visual Block shift+i 输入</p>
 2.CTRL+v 进入“可视 块”模式，选取这一列操作多少行。
 3.SHIFT+i(I) 输入要插入的内容。
 4.ESC 按两次，会在每行的选定的区域出现插入的内容。</p>
+<p><a href=https://blog.csdn.net/zhanggang807/article/details/9182467>vim多行编辑行首和行尾</a></p>
 <h3 id=目录树>目录树</h3>
 <p>依赖插件 NERDTree
 <a href=https://github.com/preservim/nerdtree>https://github.com/preservim/nerdtree</a></p>
@@ -214,6 +215,19 @@ xp 交互两个字符。
 :{作用范围}s/{目标}/{替换}/{替换标志}
 例如:%s/foo/bar/g会在全局范围(%)查找foo并替换为bar，所有出现都会被替换（g）。
 <a href=https://harttle.land/2016/08/08/vim-search-in-file.html>https://harttle.land/2016/08/08/vim-search-in-file.html</a></p>
+<p><a href=https://einverne.github.io/post/2017/10/vim-global.html>vim 全局命令g</a>
+:[range]global[!]/{pattern}/{command}
+:[range]g/pattern/command</p>
+<p>[range] 指定文本范围,默认为整个文档
+pattern 在范围 range 内的行如果匹配 pattern，则执行 command
+! 表示取反，也就是不匹配的行，也可以使用 vglobal
+command 默认是打印文本</p>
+<p>在 range 范围内匹配 patter 的行执行 Ex command。使用 :help ex-cmd 来查看。
+常用的 Ex command 可以参考如下例子：</p>
+<p>d 删除
+m 移动
+t 拷贝
+s 替换</p>
 <h3 id=块模式下插入换行>块模式下插入换行。</h3>
 <p>:'&lt;,'>s/%V/\r/
 %V 表示的是光标的位置
@@ -246,7 +260,10 @@ xp 交互两个字符。
 <p><a href=http://blog.csdn.net/haluoluo211/article/details/52448358>vim在idea</a>
 <a href=http://blog.sina.com.cn/s/blog_6c9d65a10100lmy5.html>滚屏</a></p>
 <ul>
-<li><input disabled type=checkbox> vim在normal模式下，自动将中文输入法切换成英文，最好是在再次切换回去的时候，能够保留之前的输入法状态。</li>
+<li><input disabled type=checkbox> vim在normal模式下，自动将中文输入法切换成英文，最好是在再次切换回去的时候，能够保留之前的输入法状态。
+<a href=https://zhouyanlt.github.io/vim/2019/09/20/vscode-vim-best-practices.html>VscodeVim 最佳实践</a>
+<a href=https://vim.rtorr.com/lang/zh_cn/>vim快捷键</a>
+<a href=https://github.com/wsdjeg/vim-galore-zh_cn>vim从入门到精通</a></li>
 </ul>
 </section>
 </article>
