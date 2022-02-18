@@ -34,7 +34,7 @@ proxies:
   - 
     name: 德国-DE1-1-流量倍率:1.0
     type: trojan
-    server: de1-1.troiecloud.com
+    server: de1-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -44,7 +44,7 @@ proxies:
   - 
     name: 德国-DE1-2-流量倍率:1.0
     type: trojan
-    server: de1-2.troiecloud.com
+    server: de1-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -54,7 +54,7 @@ proxies:
   - 
     name: 德国-DE1-3-流量倍率:1.0
     type: trojan
-    server: de1-3.troiecloud.com
+    server: de1-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -64,7 +64,7 @@ proxies:
   - 
     name: 德国-DE1-4-流量倍率:1.0
     type: trojan
-    server: de1-4.troiecloud.com
+    server: de1-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -74,7 +74,7 @@ proxies:
   - 
     name: 德国-DE2-1-流量倍率:1.0
     type: trojan
-    server: de2-1.troiecloud.com
+    server: de2-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -84,7 +84,7 @@ proxies:
   - 
     name: 德国-DE2-2-流量倍率:1.0
     type: trojan
-    server: de2-2.troiecloud.com
+    server: de2-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -94,7 +94,7 @@ proxies:
   - 
     name: 德国-DE2-3-流量倍率:1.0
     type: trojan
-    server: de2-3.troiecloud.com
+    server: de2-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -104,7 +104,7 @@ proxies:
   - 
     name: 德国-DE2-4-流量倍率:1.0
     type: trojan
-    server: de2-4.troiecloud.com
+    server: de2-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -114,7 +114,7 @@ proxies:
   - 
     name: 爱沙尼亚-EE1-1-流量倍率:0.1
     type: trojan
-    server: ee1-1.troiecloud.com
+    server: ee1-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -124,7 +124,7 @@ proxies:
   - 
     name: 爱沙尼亚-EE1-2-流量倍率:0.1
     type: trojan
-    server: ee1-2.troiecloud.com
+    server: ee1-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -134,7 +134,7 @@ proxies:
   - 
     name: 爱沙尼亚-EE1-3-流量倍率:0.1
     type: trojan
-    server: ee1-3.troiecloud.com
+    server: ee1-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -144,7 +144,7 @@ proxies:
   - 
     name: 爱沙尼亚-EE1-4-流量倍率:0.1
     type: trojan
-    server: ee1-4.troiecloud.com
+    server: ee1-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -154,7 +154,7 @@ proxies:
   - 
     name: 美国-US1-1-流量倍率:1.5
     type: trojan
-    server: us1-1.troiecloud.com
+    server: us1-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -164,7 +164,7 @@ proxies:
   - 
     name: 美国-US1-2-流量倍率:1.5
     type: trojan
-    server: us1-2.troiecloud.com
+    server: us1-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -174,7 +174,7 @@ proxies:
   - 
     name: 美国-US1-3-流量倍率:1.5
     type: trojan
-    server: us1-3.troiecloud.com
+    server: us1-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -184,7 +184,7 @@ proxies:
   - 
     name: 美国-US1-4-流量倍率:1.5
     type: trojan
-    server: us1-4.troiecloud.com
+    server: us1-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -194,7 +194,7 @@ proxies:
   - 
     name: 美国-US2-1-流量倍率:1.0
     type: trojan
-    server: us2-1.troiecloud.com
+    server: us2-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -204,7 +204,7 @@ proxies:
   - 
     name: 美国-US2-2-流量倍率:1.0
     type: trojan
-    server: us2-2.troiecloud.com
+    server: us2-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -214,7 +214,7 @@ proxies:
   - 
     name: 美国-US2-3-流量倍率:1.0
     type: trojan
-    server: us2-3.troiecloud.com
+    server: us2-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -224,7 +224,7 @@ proxies:
   - 
     name: 美国-US2-4-流量倍率:1.0
     type: trojan
-    server: us2-4.troiecloud.com
+    server: us2-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -234,7 +234,7 @@ proxies:
   - 
     name: 美国-US3-1-流量倍率:1.0
     type: trojan
-    server: us3-1.troiecloud.com
+    server: us3-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -244,7 +244,7 @@ proxies:
   - 
     name: 美国-US3-2-流量倍率:1.0
     type: trojan
-    server: us3-2.troiecloud.com
+    server: us3-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -254,7 +254,7 @@ proxies:
   - 
     name: 美国-US3-3-流量倍率:1.0
     type: trojan
-    server: us3-3.troiecloud.com
+    server: us3-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -264,7 +264,7 @@ proxies:
   - 
     name: 美国-US3-4-流量倍率:1.0
     type: trojan
-    server: us3-4.troiecloud.com
+    server: us3-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -274,7 +274,7 @@ proxies:
   - 
     name: 美国-US3-5-流量倍率:1.0
     type: trojan
-    server: us3-5.troiecloud.com
+    server: us3-5.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -284,7 +284,7 @@ proxies:
   - 
     name: 美国-US3-6-流量倍率:1.0
     type: trojan
-    server: us3-6.troiecloud.com
+    server: us3-6.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -294,7 +294,7 @@ proxies:
   - 
     name: 美国-US3-7-流量倍率:1.0
     type: trojan
-    server: us3-7.troiecloud.com
+    server: us3-7.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -304,7 +304,7 @@ proxies:
   - 
     name: 美国-US3-8-流量倍率:1.0
     type: trojan
-    server: us3-8.troiecloud.com
+    server: us3-8.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -314,7 +314,7 @@ proxies:
   - 
     name: 香港-HK1-1-流量倍率:0.5
     type: trojan
-    server: hk1-1.troiecloud.com
+    server: hk1-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -324,7 +324,7 @@ proxies:
   - 
     name: 香港-HK1-2-流量倍率:0.5
     type: trojan
-    server: hk1-2.troiecloud.com
+    server: hk1-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -334,7 +334,7 @@ proxies:
   - 
     name: 香港-HK1-3-流量倍率:0.5
     type: trojan
-    server: hk1-3.troiecloud.com
+    server: hk1-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -344,7 +344,7 @@ proxies:
   - 
     name: 香港-HK1-4-流量倍率:0.5
     type: trojan
-    server: hk1-4.troiecloud.com
+    server: hk1-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -354,7 +354,7 @@ proxies:
   - 
     name: 香港-HK1-5-流量倍率:0.5
     type: trojan
-    server: hk1-5.troiecloud.com
+    server: hk1-5.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -364,7 +364,7 @@ proxies:
   - 
     name: 香港-HK1-6-流量倍率:0.5
     type: trojan
-    server: hk1-6.troiecloud.com
+    server: hk1-6.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -374,7 +374,7 @@ proxies:
   - 
     name: 香港-HK1-7-流量倍率:0.5
     type: trojan
-    server: hk1-7.troiecloud.com
+    server: hk1-7.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -384,7 +384,7 @@ proxies:
   - 
     name: 香港-HK1-8-流量倍率:0.5
     type: trojan
-    server: hk1-8.troiecloud.com
+    server: hk1-8.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -394,7 +394,7 @@ proxies:
   - 
     name: 台湾-TW1-1-流量倍率:0.5
     type: trojan
-    server: tw1-1.troiecloud.com
+    server: tw1-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -404,7 +404,7 @@ proxies:
   - 
     name: 台湾-TW1-2-流量倍率:0.5
     type: trojan
-    server: tw1-2.troiecloud.com
+    server: tw1-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -414,7 +414,7 @@ proxies:
   - 
     name: 台湾-TW1-3-流量倍率:0.5
     type: trojan
-    server: tw1-3.troiecloud.com
+    server: tw1-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -424,7 +424,7 @@ proxies:
   - 
     name: 台湾-TW1-4-流量倍率:0.5
     type: trojan
-    server: tw1-4.troiecloud.com
+    server: tw1-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -434,7 +434,7 @@ proxies:
   - 
     name: 日本-TY1-1-流量倍率:1.0
     type: trojan
-    server: ty1-1.troiecloud.com
+    server: ty1-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -444,7 +444,7 @@ proxies:
   - 
     name: 日本-TY1-2-流量倍率:1.0
     type: trojan
-    server: ty1-2.troiecloud.com
+    server: ty1-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -454,7 +454,7 @@ proxies:
   - 
     name: 日本-TY1-3-流量倍率:1.0
     type: trojan
-    server: ty1-3.troiecloud.com
+    server: ty1-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -464,7 +464,7 @@ proxies:
   - 
     name: 日本-TY1-4-流量倍率:1.0
     type: trojan
-    server: ty1-4.troiecloud.com
+    server: ty1-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -474,7 +474,7 @@ proxies:
   - 
     name: 日本-TY2-1-流量倍率:1.0
     type: trojan
-    server: ty2-1.troiecloud.com
+    server: ty2-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -484,7 +484,7 @@ proxies:
   - 
     name: 日本-TY2-2-流量倍率:1.0
     type: trojan
-    server: ty2-2.troiecloud.com
+    server: ty2-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -494,7 +494,7 @@ proxies:
   - 
     name: 日本-TY2-3-流量倍率:1.0
     type: trojan
-    server: ty2-3.troiecloud.com
+    server: ty2-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -504,7 +504,7 @@ proxies:
   - 
     name: 日本-TY2-4-流量倍率:1.0
     type: trojan
-    server: ty2-4.troiecloud.com
+    server: ty2-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -514,7 +514,7 @@ proxies:
   - 
     name: 日本-TY2-5-流量倍率:1.0
     type: trojan
-    server: ty2-5.troiecloud.com
+    server: ty2-5.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -524,7 +524,7 @@ proxies:
   - 
     name: 日本-TY2-6-流量倍率:1.0
     type: trojan
-    server: ty2-6.troiecloud.com
+    server: ty2-6.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -534,7 +534,7 @@ proxies:
   - 
     name: 日本-TY2-7-流量倍率:1.0
     type: trojan
-    server: ty2-7.troiecloud.com
+    server: ty2-7.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -544,7 +544,7 @@ proxies:
   - 
     name: 日本-TY2-8-流量倍率:1.0
     type: trojan
-    server: ty2-8.troiecloud.com
+    server: ty2-8.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -554,7 +554,7 @@ proxies:
   - 
     name: 日本-OS1-1-流量倍率:1.0
     type: trojan
-    server: os1-1.troiecloud.com
+    server: os1-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -564,7 +564,7 @@ proxies:
   - 
     name: 日本-OS1-2-流量倍率:1.0
     type: trojan
-    server: os1-2.troiecloud.com
+    server: os1-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -574,7 +574,7 @@ proxies:
   - 
     name: 日本-OS1-3-流量倍率:1.0
     type: trojan
-    server: os1-3.troiecloud.com
+    server: os1-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -584,7 +584,7 @@ proxies:
   - 
     name: 日本-OS1-4-流量倍率:1.0
     type: trojan
-    server: os1-4.troiecloud.com
+    server: os1-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -594,7 +594,7 @@ proxies:
   - 
     name: 日本-OS1-5-流量倍率:1.0
     type: trojan
-    server: os1-5.troiecloud.com
+    server: os1-5.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -604,7 +604,7 @@ proxies:
   - 
     name: 日本-OS1-6-流量倍率:1.0
     type: trojan
-    server: os1-6.troiecloud.com
+    server: os1-6.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -614,7 +614,7 @@ proxies:
   - 
     name: 日本-OS1-7-流量倍率:1.0
     type: trojan
-    server: os1-7.troiecloud.com
+    server: os1-7.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -624,7 +624,7 @@ proxies:
   - 
     name: 日本-OS1-8-流量倍率:1.0
     type: trojan
-    server: os1-8.troiecloud.com
+    server: os1-8.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -634,7 +634,7 @@ proxies:
   - 
     name: 日本-OS2-1-流量倍率:1.0
     type: trojan
-    server: os2-1.troiecloud.com
+    server: os2-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -644,7 +644,7 @@ proxies:
   - 
     name: 日本-OS2-2-流量倍率:1.0
     type: trojan
-    server: os2-2.troiecloud.com
+    server: os2-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -654,7 +654,7 @@ proxies:
   - 
     name: 日本-OS2-3-流量倍率:1.0
     type: trojan
-    server: os2-3.troiecloud.com
+    server: os2-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -664,7 +664,7 @@ proxies:
   - 
     name: 日本-OS2-4-流量倍率:1.0
     type: trojan
-    server: os2-4.troiecloud.com
+    server: os2-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -674,7 +674,7 @@ proxies:
   - 
     name: 日本-OS2-5-流量倍率:1.0
     type: trojan
-    server: os2-5.troiecloud.com
+    server: os2-5.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -684,7 +684,7 @@ proxies:
   - 
     name: 日本-OS2-6-流量倍率:1.0
     type: trojan
-    server: os2-6.troiecloud.com
+    server: os2-6.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -694,7 +694,7 @@ proxies:
   - 
     name: 日本-OS2-7-流量倍率:1.0
     type: trojan
-    server: os2-7.troiecloud.com
+    server: os2-7.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -704,7 +704,7 @@ proxies:
   - 
     name: 日本-OS2-8-流量倍率:1.0
     type: trojan
-    server: os2-8.troiecloud.com
+    server: os2-8.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -714,7 +714,7 @@ proxies:
   - 
     name: 荷兰-NL1-1-流量倍率:0.5
     type: trojan
-    server: nl1-1.troiecloud.com
+    server: nl1-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -724,7 +724,7 @@ proxies:
   - 
     name: 荷兰-NL1-2-流量倍率:0.5
     type: trojan
-    server: nl1-2.troiecloud.com
+    server: nl1-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -734,7 +734,7 @@ proxies:
   - 
     name: 荷兰-NL1-3-流量倍率:0.5
     type: trojan
-    server: nl1-3.troiecloud.com
+    server: nl1-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -744,7 +744,7 @@ proxies:
   - 
     name: 荷兰-NL1-4-流量倍率:0.5
     type: trojan
-    server: nl1-4.troiecloud.com
+    server: nl1-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -754,7 +754,7 @@ proxies:
   - 
     name: 荷兰-NL1-5-流量倍率:0.5
     type: trojan
-    server: nl1-5.troiecloud.com
+    server: nl1-5.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -764,7 +764,7 @@ proxies:
   - 
     name: 荷兰-NL1-6-流量倍率:0.5
     type: trojan
-    server: nl1-6.troiecloud.com
+    server: nl1-6.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -774,7 +774,7 @@ proxies:
   - 
     name: 荷兰-NL1-7-流量倍率:0.5
     type: trojan
-    server: nl1-7.troiecloud.com
+    server: nl1-7.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -784,7 +784,7 @@ proxies:
   - 
     name: 荷兰-NL1-8-流量倍率:0.5
     type: trojan
-    server: nl1-8.troiecloud.com
+    server: nl1-8.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -794,7 +794,7 @@ proxies:
   - 
     name: 荷兰-NL3-1-流量倍率:0.1
     type: trojan
-    server: nl3-1.troiecloud.com
+    server: nl3-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -804,7 +804,7 @@ proxies:
   - 
     name: 荷兰-NL3-2-流量倍率:0.1
     type: trojan
-    server: nl3-2.troiecloud.com
+    server: nl3-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -814,7 +814,7 @@ proxies:
   - 
     name: 荷兰-NL3-3-流量倍率:0.1
     type: trojan
-    server: nl3-3.troiecloud.com
+    server: nl3-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -824,7 +824,7 @@ proxies:
   - 
     name: 荷兰-NL3-4-流量倍率:0.1
     type: trojan
-    server: nl3-4.troiecloud.com
+    server: nl3-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -834,7 +834,7 @@ proxies:
   - 
     name: 荷兰-NL3-5-流量倍率:0.1
     type: trojan
-    server: nl3-5.troiecloud.com
+    server: nl3-5.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -844,7 +844,7 @@ proxies:
   - 
     name: 荷兰-NL3-6-流量倍率:0.1
     type: trojan
-    server: nl3-6.troiecloud.com
+    server: nl3-6.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -854,7 +854,7 @@ proxies:
   - 
     name: 荷兰-NL3-7-流量倍率:0.1
     type: trojan
-    server: nl3-7.troiecloud.com
+    server: nl3-7.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -864,7 +864,7 @@ proxies:
   - 
     name: 荷兰-NL3-8-流量倍率:0.1
     type: trojan
-    server: nl3-8.troiecloud.com
+    server: nl3-8.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -874,7 +874,7 @@ proxies:
   - 
     name: 英国-UK1-1-流量倍率:1.0
     type: trojan
-    server: uk1-1.troiecloud.com
+    server: uk1-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -884,7 +884,7 @@ proxies:
   - 
     name: 英国-UK1-2-流量倍率:1.0
     type: trojan
-    server: uk1-2.troiecloud.com
+    server: uk1-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -894,7 +894,7 @@ proxies:
   - 
     name: 英国-UK1-3-流量倍率:1.0
     type: trojan
-    server: uk1-3.troiecloud.com
+    server: uk1-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -904,7 +904,7 @@ proxies:
   - 
     name: 英国-UK1-4-流量倍率:1.0
     type: trojan
-    server: uk1-4.troiecloud.com
+    server: uk1-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -914,7 +914,7 @@ proxies:
   - 
     name: 澳大利亚-AU1-1-流量倍率:1.0
     type: trojan
-    server: au1-1.troiecloud.com
+    server: au1-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -924,7 +924,7 @@ proxies:
   - 
     name: 澳大利亚-AU1-2-流量倍率:1.0
     type: trojan
-    server: au1-2.troiecloud.com
+    server: au1-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -934,7 +934,7 @@ proxies:
   - 
     name: 澳大利亚-AU1-3-流量倍率:1.0
     type: trojan
-    server: au1-3.troiecloud.com
+    server: au1-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -944,7 +944,7 @@ proxies:
   - 
     name: 澳大利亚-AU1-4-流量倍率:1.0
     type: trojan
-    server: au1-4.troiecloud.com
+    server: au1-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -954,7 +954,7 @@ proxies:
   - 
     name: 美国-V6-1-流量倍率:1.0
     type: trojan
-    server: v6-1.troiecloud.com
+    server: v6-1.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -964,7 +964,7 @@ proxies:
   - 
     name: 日本-V6-2-流量倍率:1.0
     type: trojan
-    server: v6-2.troiecloud.com
+    server: v6-2.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -974,7 +974,7 @@ proxies:
   - 
     name: 香港-V6-3-流量倍率:0.5
     type: trojan
-    server: v6-3.troiecloud.com
+    server: v6-3.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -984,7 +984,7 @@ proxies:
   - 
     name: 荷兰-V6-4-流量倍率:0.1
     type: trojan
-    server: v6-4.troiecloud.com
+    server: v6-4.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:

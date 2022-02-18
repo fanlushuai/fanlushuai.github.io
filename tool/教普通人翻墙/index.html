@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=description content>
-<meta name=generator content="Hugo 0.92.1">
+<meta name=generator content="Hugo 0.92.2">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-188010236-1','auto'),ga('send','pageview'))</script>
 <script async src=https://www.google-analytics.com/analytics.js></script>
@@ -26,7 +26,7 @@
 <div class=meta>
 <span class=key>published on</span>
 <span class=val><time itemprop=datePublished datetime="2020-09-19 15:10:23">2020-09-19 15:10:23</time></span>
-<span class=key>3295 words</span>
+<span class=key>3539 words</span>
 </div>
 <h1 class=headline itemprop=headline>教普通人翻墙</h1>
 <section class=body itemprop=articleBody>
@@ -116,6 +116,12 @@ clash是一款本地代理软件。支持多个平台，windows，安卓，macos
 <p>clash直接订阅的供应商，规则集，数量不够。可以继续添加规则集，使得采用最佳实践推荐的方案。</p>
 </li>
 </ol>
+<h3 id=代理的具体组合使用>代理的具体组合使用</h3>
+<p>浏览器使用<a href=https://blog.mimvp.com/article/29144.html>SwitchyOmega</a>
+本地开启代理软件，但不使用全局模式。仅仅解决浏览器的代理问题。并且，不使用SwitchyOmega的规则集。而是使用clash的规则集，以及其规则集的provider功能。
+使用规则集下沉到clash位置，以使得所有的软件都可以共享规则集。
+同时默认的不使用全局模式，也可以规避系统的一些流量走代理。因为大多数的场景还是仅仅浏览器很需要。
+在需要的时候，可以使用clash的全局模式。甚至clash的tun模式。使得所有流量临时性的去走代理。</p>
 <h2 id=翻墙之后可以获得的资源>翻墙之后可以获得的资源</h2>
 <p>高质量的内容，和更加先进的工具。</p>
 <h3 id=chrome浏览器的使用国内一些浏览器也是chrome内核但是插件库不行>chrome浏览器的使用（国内一些浏览器也是chrome内核，但是插件库不行）</h3>
