@@ -1,156 +1,19 @@
-<!doctype html><html lang=en-us>
-<head>
-<meta charset=utf-8>
-<meta name=description content>
-<meta name=generator content="Hugo 0.92.2">
-<meta name=viewport content="width=device-width,initial-scale=1">
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-188010236-1','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-<link rel=stylesheet href=/css/style.css type=text/css>
-<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type=text/css>
-<link rel=alternate href=/index.xml type=application/rss+xml title=Auh>
-<title>Auh</title>
-</head>
-<body>
-<header>
-<div class="container clearfix">
-<a class=path href>[Auh]</a>
-<span class=caret># _</span>
-<div class=right>
-</div>
-</div>
-</header>
-<div class=container>
-<main role=main class=article>
-<article class=single itemscope itemtype=http://schema.org/BlogPosting>
-<div class=meta>
-<span class=key>published on</span>
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=description content><meta name=generator content="Hugo 0.94.2"><meta name=viewport content="width=device-width,initial-scale=1"><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-188010236-1","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
+<link rel=stylesheet href=/css/style.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type=text/css><link rel=alternate href=/index.xml type=application/rss+xml title=Auh><title>Auh</title></head><body><header><div class="container clearfix"><a class=path href>[Auh]</a>
+<span class=caret># _</span><div class=right></div></div></header><div class=container><main role=main class=article><article class=single itemscope itemtype=http://schema.org/BlogPosting><div class=meta><span class=key>published on</span>
 <span class=val><time itemprop=datePublished datetime="2020-09-19 15:10:23">2020-09-19 15:10:23</time></span>
-<span class=key>3539 words</span>
-</div>
-<h1 class=headline itemprop=headline>教普通人翻墙</h1>
-<section class=body itemprop=articleBody>
-<h1 id=教普通人理解翻墙>教普通人理解翻墙</h1>
-<p>本文属于经验之谈。不属于循序渐进的引导。属于自顶向下的讲述方式。有利于理解全貌。进而掌握细节。可以称之为，导论。</p>
-<h2 id=为何要翻墙>为何要翻墙</h2>
-<p>国内政府主动干预，网络屏蔽。导致无法访问全球互联网资源。</p>
-<h2 id=如何突破这种屏蔽>如何突破这种屏蔽</h2>
-<p>代理，主要目标。将流量，即网络数据的访问。路由到某个服务器上，进行跳板访问。
+<span class=key>3539 words</span></div><h1 class=headline itemprop=headline>教普通人翻墙</h1><section class=body itemprop=articleBody><h1 id=教普通人理解翻墙>教普通人理解翻墙</h1><p>本文属于经验之谈。不属于循序渐进的引导。属于自顶向下的讲述方式。有利于理解全貌。进而掌握细节。可以称之为，导论。</p><h2 id=为何要翻墙>为何要翻墙</h2><p>国内政府主动干预，网络屏蔽。导致无法访问全球互联网资源。</p><h2 id=如何突破这种屏蔽>如何突破这种屏蔽</h2><p>代理，主要目标。将流量，即网络数据的访问。路由到某个服务器上，进行跳板访问。
 将自己的流量安全额送达国外服务器。这样对目表网络资源的访问。就转换为了。
-国外服务器对目标的访问。</p>
-<p>而突破屏蔽。表现为，通过一种加密技术，在本地电脑和国外服务器之间建立了安全通道。导致国内政府的现有技术无法做到普通的屏蔽。即无法识别流量，进而无法屏蔽。</p>
-<p>所以，核心点就在于，加密技术。加密技术是一种加密理论知识。通过具体的软件来实现这种理论逻辑。实现数据的加密。</p>
-<p>市面上，已经存在加密技术，以及加密技术实现的代理软件。</p>
-<p>这个<strong>代理软件</strong>功能上，就可以做到。加密流量并且护送流量突破国家的筛查安全到达目标机器。在由目标机器，通过正常的网络请求，连接正常网络。实现正常的网络数据请求。</p>
-<p><strong>目标机器</strong>的必要性，在于，直接加密，损失了，网络资源，可识别的流量的样子。以至于需要恢复奥原来的样子。目标机器，就在做一件恢复的事情。同时，目标机器又具备访问被屏蔽网络的权限。（不受政府监管）</p>
-<p><img src=/img/AuhBlogImg_2022-01-16-15-09-13.png alt>
-本地的其他软件通过连接本地代理软件，本地代理软件再连接代理服务器</p>
-<h2 id=代理的方式存在的问题>代理的方式存在的问题</h2>
-<ol>
-<li>不同的网站，有的是全球化的。有的是区域。网站会根据流量来源做一些调整
-所以，通过不同的地方，返回的数据，或者数据的权限不同。直接导致了，是否能访问，和返回内容是否相同的问题。比如国内的互联网。国外的互联网。</li>
-<li>代理服务器的流量问题。
-通常代理服务器是购买的，存在流量限制。加入，将所有本地流量路由到代理服务器，一方面会造成正常网络的路由链条增加，导致网速降低。另外，会损耗代理服务器的付费流量。所以，健康的方式，应该是，本地，可以自动的选择流量是否连接代理服务器。从而规避问题。</li>
-<li>不同代理服务器的差异化问题。稳定性问题。</li>
-</ol>
-<h2 id=代理的网络访问方式需要的功能支持>代理的网络访问方式需要的功能支持</h2>
-<p>针对实际的应用过程。代理软件的设计功能。</p>
-<ol>
-<li>通过建立规则模块。进行分流。</li>
-<li>通过策略模块。来选择不同的代理服务器。</li>
-</ol>
-<h3 id=规则分流模块>规则分流模块：</h3>
-<ol>
-<li>规则模块是广义的规则。上到系统顶层（<strong>系统代理</strong>），在到具体软件，再到本地代理软件。即，本地可控的链条中，任何一个环节，都可以进行建立模块规则。实现不同层级的规则筛选。</li>
-<li>通常见到的，代理软件本地客户端，内部集成规则模块。chrome扩展，代理切换扩展，来构建规则模块。即具体系统应用集成规则模块。当然，也有系统级别的规则模块。通常，使用代理软件的系统代理来自动化的让系统使用代理软件提供的规则。</li>
-<li>规则模块，牵扯更新的问题。所以，chrome浏览器可以通过直接检测的方式，构建规则。而其他位置的规则，通常是需要编写脚本实现的。但是脚本就会失去手动选择的能力。这样，系统规则，和代理软件基本上都会失去这个能力。或者手动选择是比较困难的。同时，更新数据也是比较困难的。同时，结合使用频率。针对chrome，一定要使用应用级别的规则，因为chrome的特殊性，既频繁使用，又会出现大量不同的资源访问。二，是针对个别应用的配置，配置使用本地代理。同时开启本地代理的规则模式，来帮助本地软件来分发流量。</li>
-<li>规则的更新。对于chrome，规则的可以方便的手动完成。但是对于其他软件。没那么方便。一方面是代理软件无法方面的手动做到。客户端的交互体验没有人做到，理论上是可以做到的。目前代理客户端主要做的仅仅是通过自动化订阅的方式。希望借助网友的力量，大数据的方式规避自己的问题。但是，每个人都可能是先驱者(<strong>先驱者问题</strong>)。第一次者。这就导致了，很小概率但是却必然存在小问题。</li>
-</ol>
-<h3 id=策略选服模块>策略选服模块</h3>
-<p>规则的职责，旨在，是否启用代理。但是，代理服务器的稳定性问题。就造成了，需要通过多台代理服务器。解决自己的问题。另外，代理提供商，也可以通过负载策略实现自己的资源高效利用。
-所以，多台代理服务器。有很重要的存在价值。即解决了用户问题，又解决了供应商成本问题。</p>
-<p>规则的出现。就会将上诉是否启用代理。延伸到，要使用那台代理。</p>
-<p>如果，单纯的配置紧紧一台，那么这种方式显然没有利用到多台。所以，需要策略。</p>
-<p>通常的策略。</p>
-<ol>
-<li>后台定期的测试不同的代理服务器的网络状态来自动选择。url_test延迟最低的方式。</li>
-<li>手动选择的方式。人的自主选择。</li>
-<li>还有半自动的方式。针对某一群域名，想要某个服务器。或者 某些手动选，其他的你看着办的策略。</li>
-</ol>
-<p>策略和策略之间是可以相互包含的。所以，任君定制。</p>
-<h2 id=最佳实践>最佳实践</h2>
-<p>充分利用本地代理软件。配置规则模块。规则的自动化更新能力。实现能够支撑系统所有软件的规则能力。</p>
-<p>但是，本地代理软件，并不主动代理系统。针对chrome使用代理插件。主动连接代理。同时，不使用集成的gwt规则功能。仅仅解决，先驱者问题。靠代理软件提供的大数据能力，解决大多数问题。</p>
-<p>针对大部分其他软件，再低频使用时，可以借助本地代理软件，直接开启系统代理模式。提升为系统级别的规则，进而实现针对其他软件的代理。</p>
-<p>当前市场，其实漏了一个东西，就是针对软件的，规则应用。比如，假如是chrome。我可以放弃规则应用。这样就可以避免两次应用本地的规则，减少没必要的开销。（当前具体的开销可能也不是很大，毕竟都是本地计算，但是主要在两个规则模块都在更新，这种功能上是重叠的）</p>
-<p>既要使得不具备规则模块的使用规则，又可以，给具备规则模块的，放权。</p>
-<p>chrome的能力，还可以给用户更快的交互体验。的主动选择规则的能力。加入本地存在多个代理软件，比如，局域网其他电脑，路由器。也是可以更快点的做到。规则的主动干预。和服务器的本地代理服务器的策略选择。</p>
-<h2 id=针对普通人的最佳实践>针对普通人的最佳实践</h2>
-<p>充分利用代理软件。利用大数据，解决跟随者问题。毕竟先驱者问题是一小部分。</p>
-<h2 id=术语理解>术语理解</h2>
-<ol>
-<li>代理软件。分代理软件本地客户端，代理软件服务器客户端</li>
-<li>代理服务器，安装了代理软件服务器客户端即解码客户端的的服务器</li>
-<li>系统代理/全局代理。本地代理链条中，的代理级别。按说系统可以直接设置，但是，代理软件提供了，内置功能，帮助你设置。导致看上去代理软件也可以来设置系统代理。</li>
-<li><a href=https://zhuanlan.zhihu.com/p/349990154>pac</a></li>
-<li>代理服务器、本地代理(软件)、代理(方式)</li>
-</ol>
-<h2 id=代理实施>代理实施</h2>
-<h3 id=代理服务器解决方式>代理服务器解决方式：</h3>
-<ol>
-<li>自建代理服务器。购买国外vps服务器，安装代理软件服务端。配置使用。
-自建的方式，成本较高，但是可控性比较强。同时，多出来了一天服务器机器，可以做其他事情。不过，大多数人多出来的服务器是无用的。这种情况更推荐后面的额方式。</li>
-<li>去供应商购买。特点，稳定，抗屏蔽能力强。能最大限度保证自己的翻墙能力。折腾是在是浪费时间。消耗自己的经历。</li>
-</ol>
-<h3 id=代理软件解决方式>代理软件解决方式：</h3>
-<ol>
-<li>
-<p>github搜，流行的就行了。推荐clash Ui版本的，clash.net。而内核版本的不建议使用，对于用户操作起来不方便。更适合网路管理员使用。</p>
-</li>
-<li>
-<p>针对clash的具体安装和使用方法：
+国外服务器对目标的访问。</p><p>而突破屏蔽。表现为，通过一种加密技术，在本地电脑和国外服务器之间建立了安全通道。导致国内政府的现有技术无法做到普通的屏蔽。即无法识别流量，进而无法屏蔽。</p><p>所以，核心点就在于，加密技术。加密技术是一种加密理论知识。通过具体的软件来实现这种理论逻辑。实现数据的加密。</p><p>市面上，已经存在加密技术，以及加密技术实现的代理软件。</p><p>这个<strong>代理软件</strong>功能上，就可以做到。加密流量并且护送流量突破国家的筛查安全到达目标机器。在由目标机器，通过正常的网络请求，连接正常网络。实现正常的网络数据请求。</p><p><strong>目标机器</strong>的必要性，在于，直接加密，损失了，网络资源，可识别的流量的样子。以至于需要恢复奥原来的样子。目标机器，就在做一件恢复的事情。同时，目标机器又具备访问被屏蔽网络的权限。（不受政府监管）</p><p><img src=/img/AuhBlogImg_2022-01-16-15-09-13.png alt>
+本地的其他软件通过连接本地代理软件，本地代理软件再连接代理服务器</p><h2 id=代理的方式存在的问题>代理的方式存在的问题</h2><ol><li>不同的网站，有的是全球化的。有的是区域。网站会根据流量来源做一些调整
+所以，通过不同的地方，返回的数据，或者数据的权限不同。直接导致了，是否能访问，和返回内容是否相同的问题。比如国内的互联网。国外的互联网。</li><li>代理服务器的流量问题。
+通常代理服务器是购买的，存在流量限制。加入，将所有本地流量路由到代理服务器，一方面会造成正常网络的路由链条增加，导致网速降低。另外，会损耗代理服务器的付费流量。所以，健康的方式，应该是，本地，可以自动的选择流量是否连接代理服务器。从而规避问题。</li><li>不同代理服务器的差异化问题。稳定性问题。</li></ol><h2 id=代理的网络访问方式需要的功能支持>代理的网络访问方式需要的功能支持</h2><p>针对实际的应用过程。代理软件的设计功能。</p><ol><li>通过建立规则模块。进行分流。</li><li>通过策略模块。来选择不同的代理服务器。</li></ol><h3 id=规则分流模块>规则分流模块：</h3><ol><li>规则模块是广义的规则。上到系统顶层（<strong>系统代理</strong>），在到具体软件，再到本地代理软件。即，本地可控的链条中，任何一个环节，都可以进行建立模块规则。实现不同层级的规则筛选。</li><li>通常见到的，代理软件本地客户端，内部集成规则模块。chrome扩展，代理切换扩展，来构建规则模块。即具体系统应用集成规则模块。当然，也有系统级别的规则模块。通常，使用代理软件的系统代理来自动化的让系统使用代理软件提供的规则。</li><li>规则模块，牵扯更新的问题。所以，chrome浏览器可以通过直接检测的方式，构建规则。而其他位置的规则，通常是需要编写脚本实现的。但是脚本就会失去手动选择的能力。这样，系统规则，和代理软件基本上都会失去这个能力。或者手动选择是比较困难的。同时，更新数据也是比较困难的。同时，结合使用频率。针对chrome，一定要使用应用级别的规则，因为chrome的特殊性，既频繁使用，又会出现大量不同的资源访问。二，是针对个别应用的配置，配置使用本地代理。同时开启本地代理的规则模式，来帮助本地软件来分发流量。</li><li>规则的更新。对于chrome，规则的可以方便的手动完成。但是对于其他软件。没那么方便。一方面是代理软件无法方面的手动做到。客户端的交互体验没有人做到，理论上是可以做到的。目前代理客户端主要做的仅仅是通过自动化订阅的方式。希望借助网友的力量，大数据的方式规避自己的问题。但是，每个人都可能是先驱者(<strong>先驱者问题</strong>)。第一次者。这就导致了，很小概率但是却必然存在小问题。</li></ol><h3 id=策略选服模块>策略选服模块</h3><p>规则的职责，旨在，是否启用代理。但是，代理服务器的稳定性问题。就造成了，需要通过多台代理服务器。解决自己的问题。另外，代理提供商，也可以通过负载策略实现自己的资源高效利用。
+所以，多台代理服务器。有很重要的存在价值。即解决了用户问题，又解决了供应商成本问题。</p><p>规则的出现。就会将上诉是否启用代理。延伸到，要使用那台代理。</p><p>如果，单纯的配置紧紧一台，那么这种方式显然没有利用到多台。所以，需要策略。</p><p>通常的策略。</p><ol><li>后台定期的测试不同的代理服务器的网络状态来自动选择。url_test延迟最低的方式。</li><li>手动选择的方式。人的自主选择。</li><li>还有半自动的方式。针对某一群域名，想要某个服务器。或者 某些手动选，其他的你看着办的策略。</li></ol><p>策略和策略之间是可以相互包含的。所以，任君定制。</p><h2 id=最佳实践>最佳实践</h2><p>充分利用本地代理软件。配置规则模块。规则的自动化更新能力。实现能够支撑系统所有软件的规则能力。</p><p>但是，本地代理软件，并不主动代理系统。针对chrome使用代理插件。主动连接代理。同时，不使用集成的gwt规则功能。仅仅解决，先驱者问题。靠代理软件提供的大数据能力，解决大多数问题。</p><p>针对大部分其他软件，再低频使用时，可以借助本地代理软件，直接开启系统代理模式。提升为系统级别的规则，进而实现针对其他软件的代理。</p><p>当前市场，其实漏了一个东西，就是针对软件的，规则应用。比如，假如是chrome。我可以放弃规则应用。这样就可以避免两次应用本地的规则，减少没必要的开销。（当前具体的开销可能也不是很大，毕竟都是本地计算，但是主要在两个规则模块都在更新，这种功能上是重叠的）</p><p>既要使得不具备规则模块的使用规则，又可以，给具备规则模块的，放权。</p><p>chrome的能力，还可以给用户更快的交互体验。的主动选择规则的能力。加入本地存在多个代理软件，比如，局域网其他电脑，路由器。也是可以更快点的做到。规则的主动干预。和服务器的本地代理服务器的策略选择。</p><h2 id=针对普通人的最佳实践>针对普通人的最佳实践</h2><p>充分利用代理软件。利用大数据，解决跟随者问题。毕竟先驱者问题是一小部分。</p><h2 id=术语理解>术语理解</h2><ol><li>代理软件。分代理软件本地客户端，代理软件服务器客户端</li><li>代理服务器，安装了代理软件服务器客户端即解码客户端的的服务器</li><li>系统代理/全局代理。本地代理链条中，的代理级别。按说系统可以直接设置，但是，代理软件提供了，内置功能，帮助你设置。导致看上去代理软件也可以来设置系统代理。</li><li><a href=https://zhuanlan.zhihu.com/p/349990154>pac</a></li><li>代理服务器、本地代理(软件)、代理(方式)</li></ol><h2 id=代理实施>代理实施</h2><h3 id=代理服务器解决方式>代理服务器解决方式：</h3><ol><li>自建代理服务器。购买国外vps服务器，安装代理软件服务端。配置使用。
+自建的方式，成本较高，但是可控性比较强。同时，多出来了一天服务器机器，可以做其他事情。不过，大多数人多出来的服务器是无用的。这种情况更推荐后面的额方式。</li><li>去供应商购买。特点，稳定，抗屏蔽能力强。能最大限度保证自己的翻墙能力。折腾是在是浪费时间。消耗自己的经历。</li></ol><h3 id=代理软件解决方式>代理软件解决方式：</h3><ol><li><p>github搜，流行的就行了。推荐clash Ui版本的，clash.net。而内核版本的不建议使用，对于用户操作起来不方便。更适合网路管理员使用。</p></li><li><p>针对clash的具体安装和使用方法：
 clash是一款本地代理软件。支持多个平台，windows，安卓，macos，支持多种通讯协议。
-具体安装步骤<a href=https://maofun.com/739.html>参考图文教程</a></p>
-</li>
-<li>
-<p>clash直接订阅的供应商，规则集，数量不够。可以继续添加规则集，使得采用最佳实践推荐的方案。</p>
-</li>
-</ol>
-<h3 id=代理的具体组合使用>代理的具体组合使用</h3>
-<p>浏览器使用<a href=https://blog.mimvp.com/article/29144.html>SwitchyOmega</a>
+具体安装步骤<a href=https://maofun.com/739.html>参考图文教程</a></p></li><li><p>clash直接订阅的供应商，规则集，数量不够。可以继续添加规则集，使得采用最佳实践推荐的方案。</p></li></ol><h3 id=代理的具体组合使用>代理的具体组合使用</h3><p>浏览器使用<a href=https://blog.mimvp.com/article/29144.html>SwitchyOmega</a>
 本地开启代理软件，但不使用全局模式。仅仅解决浏览器的代理问题。并且，不使用SwitchyOmega的规则集。而是使用clash的规则集，以及其规则集的provider功能。
 使用规则集下沉到clash位置，以使得所有的软件都可以共享规则集。
 同时默认的不使用全局模式，也可以规避系统的一些流量走代理。因为大多数的场景还是仅仅浏览器很需要。
-在需要的时候，可以使用clash的全局模式。甚至clash的tun模式。使得所有流量临时性的去走代理。</p>
-<h2 id=翻墙之后可以获得的资源>翻墙之后可以获得的资源</h2>
-<p>高质量的内容，和更加先进的工具。</p>
-<h3 id=chrome浏览器的使用国内一些浏览器也是chrome内核但是插件库不行>chrome浏览器的使用（国内一些浏览器也是chrome内核，但是插件库不行）</h3>
-<p>丰富的插件库。可以通过chrome商店，安装各种各样的插件。来丰富浏览器的功能。比如，实用功能类型的：</p>
-<ul>
-<li>vip破解插件、</li>
-<li>去广告插件、</li>
-<li>toby主页管理插件、</li>
-<li>密码管理插件、</li>
-<li>购物比价插件</li>
-</ul>
-<h3 id=google-进行搜索比baidu的搜索资源能力强太多了>google 进行搜索（比baidu的搜索资源能力强太多了）</h3>
-<p>很多国内搜索不到的影视，音频，文档。google都能搜索到。</p>
-<h3 id=youtubenetflix等国外先进的高质量互联网内容>youtube，netflix，等国外先进的高质量互联网内容</h3>
-<p>类似于b站。但是比b站的内容更加开放，丰富。可以找一些xxx教程，或者一些感兴趣的东西的视频。一些书籍类的解说。钓鱼视频，数码产品的视频，影视推荐，等等还有一些专业的东西。</p>
-<h2 id=翻墙之后将会获得的感受>翻墙之后将会获得的感受</h2>
-<p>当习惯翻墙之后，基本上对国内搜索出来的资源兴趣不大。因为国内资源质量不高，内容不够广泛全面。所以翻墙非常有必要。</p>
-</section>
-</article>
-</main>
-<div id=gitalk-container></div>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css>
-<script src=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js></script>
-<script>const gitalk=new Gitalk({clientID:'dcf0c61ac0ce08c3c9cc',clientSecret:'a8e5a8b611b5e9083e004ee5f0122095cf7e6f43',repo:'fanlushuai.github.io',owner:'fanlushuai',admin:['fanlushuai'],id:decodeURI(location.pathname),distractionFreeMode:!1});(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('gitalk-container').innerHTML='Gitalk comments not available by default when the website is previewed locally.';return}gitalk.render('gitalk-container')})()</script>
-</div>
-<footer>
-<div class=container>
-<span class=copyright>Many Thanks to Vscode-Github-Hugo-Base16 Developers</span>
-</div>
-</footer>
-</body>
-</html>
+在需要的时候，可以使用clash的全局模式。甚至clash的tun模式。使得所有流量临时性的去走代理。</p><h2 id=翻墙之后可以获得的资源>翻墙之后可以获得的资源</h2><p>高质量的内容，和更加先进的工具。</p><h3 id=chrome浏览器的使用国内一些浏览器也是chrome内核但是插件库不行>chrome浏览器的使用（国内一些浏览器也是chrome内核，但是插件库不行）</h3><p>丰富的插件库。可以通过chrome商店，安装各种各样的插件。来丰富浏览器的功能。比如，实用功能类型的：</p><ul><li>vip破解插件、</li><li>去广告插件、</li><li>toby主页管理插件、</li><li>密码管理插件、</li><li>购物比价插件</li></ul><h3 id=google-进行搜索比baidu的搜索资源能力强太多了>google 进行搜索（比baidu的搜索资源能力强太多了）</h3><p>很多国内搜索不到的影视，音频，文档。google都能搜索到。</p><h3 id=youtubenetflix等国外先进的高质量互联网内容>youtube，netflix，等国外先进的高质量互联网内容</h3><p>类似于b站。但是比b站的内容更加开放，丰富。可以找一些xxx教程，或者一些感兴趣的东西的视频。一些书籍类的解说。钓鱼视频，数码产品的视频，影视推荐，等等还有一些专业的东西。</p><h2 id=翻墙之后将会获得的感受>翻墙之后将会获得的感受</h2><p>当习惯翻墙之后，基本上对国内搜索出来的资源兴趣不大。因为国内资源质量不高，内容不够广泛全面。所以翻墙非常有必要。</p></section></article></main><div id=gitalk-container></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css><script src=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js></script>
+<script>const gitalk=new Gitalk({clientID:"dcf0c61ac0ce08c3c9cc",clientSecret:"a8e5a8b611b5e9083e004ee5f0122095cf7e6f43",repo:"fanlushuai.github.io",owner:"fanlushuai",admin:["fanlushuai"],id:decodeURI(location.pathname),distractionFreeMode:!1});(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("gitalk-container").innerHTML="Gitalk comments not available by default when the website is previewed locally.";return}gitalk.render("gitalk-container")})()</script></div><footer><div class=container><span class=copyright>Many Thanks to Vscode-Github-Hugo-Base16 Developers</span></div></footer></body></html>
