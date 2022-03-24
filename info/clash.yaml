@@ -32,6 +32,86 @@ dns:
       - +.gvt1.com
 proxies:
   - 
+    name: 香港-HK1-1-流量倍率:0.5
+    type: trojan
+    server: hk1-1.nigirocloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 香港-HK1-2-流量倍率:0.5
+    type: trojan
+    server: hk1-2.nigirocloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 香港-HK1-3-流量倍率:0.5
+    type: trojan
+    server: hk1-3.nigirocloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 香港-HK1-4-流量倍率:0.5
+    type: trojan
+    server: hk1-4.nigirocloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 香港-HK1-5-流量倍率:0.5
+    type: trojan
+    server: hk1-5.nigirocloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 香港-HK1-6-流量倍率:0.5
+    type: trojan
+    server: hk1-6.nigirocloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 香港-HK1-7-流量倍率:0.5
+    type: trojan
+    server: hk1-7.nigirocloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
+    name: 香港-HK1-8-流量倍率:0.5
+    type: trojan
+    server: hk1-8.nigirocloud.com
+    port: 443
+    password: 9TmSJSgYd2sJTUZV9Q
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: true
+  - 
     name: 德国-DE1-1-流量倍率:1.0
     type: trojan
     server: de1-1.nigirocloud.com
@@ -305,86 +385,6 @@ proxies:
     name: 美国-US3-8-流量倍率:1.0
     type: trojan
     server: us3-8.nigirocloud.com
-    port: 443
-    password: 9TmSJSgYd2sJTUZV9Q
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
-  - 
-    name: 香港-HK1-1-流量倍率:0.5
-    type: trojan
-    server: hk1-1.nigirocloud.com
-    port: 443
-    password: 9TmSJSgYd2sJTUZV9Q
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
-  - 
-    name: 香港-HK1-2-流量倍率:0.5
-    type: trojan
-    server: hk1-2.nigirocloud.com
-    port: 443
-    password: 9TmSJSgYd2sJTUZV9Q
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
-  - 
-    name: 香港-HK1-3-流量倍率:0.5
-    type: trojan
-    server: hk1-3.nigirocloud.com
-    port: 443
-    password: 9TmSJSgYd2sJTUZV9Q
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
-  - 
-    name: 香港-HK1-4-流量倍率:0.5
-    type: trojan
-    server: hk1-4.nigirocloud.com
-    port: 443
-    password: 9TmSJSgYd2sJTUZV9Q
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
-  - 
-    name: 香港-HK1-5-流量倍率:0.5
-    type: trojan
-    server: hk1-5.nigirocloud.com
-    port: 443
-    password: 9TmSJSgYd2sJTUZV9Q
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
-  - 
-    name: 香港-HK1-6-流量倍率:0.5
-    type: trojan
-    server: hk1-6.nigirocloud.com
-    port: 443
-    password: 9TmSJSgYd2sJTUZV9Q
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
-  - 
-    name: 香港-HK1-7-流量倍率:0.5
-    type: trojan
-    server: hk1-7.nigirocloud.com
-    port: 443
-    password: 9TmSJSgYd2sJTUZV9Q
-    alpn:
-      - h2
-      - http/1.1
-    skip-cert-verify: true
-  - 
-    name: 香港-HK1-8-流量倍率:0.5
-    type: trojan
-    server: hk1-8.nigirocloud.com
     port: 443
     password: 9TmSJSgYd2sJTUZV9Q
     alpn:
@@ -1169,8 +1169,6 @@ rules:
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,cncidr,DIRECT
   - RULE-SET,telegramcidr,Proxy
-  - GEOIP,,DIRECT
-  - GEOIP,CN,DIRECT
   - DOMAIN-SUFFIX,googleapis.cn,Proxy
   - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
   - DOMAIN,safebrowsing.googleapis.com,DIRECT
@@ -1645,6 +1643,7 @@ rules:
   - IP-CIDR,10.0.0.0/8,DIRECT
   - IP-CIDR,17.0.0.0/8,DIRECT
   - IP-CIDR,100.64.0.0/10,DIRECT
+  - GEOIP,,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,Proxy
 
