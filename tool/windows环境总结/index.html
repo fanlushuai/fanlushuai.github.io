@@ -2,7 +2,7 @@
 <link rel=stylesheet href=/css/style.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type=text/css><link rel=alternate href=/index.xml type=application/rss+xml title=Auh><title>Auh</title></head><body><header><div class="container clearfix"><a class=path href>[Auh]</a>
 <span class=caret># _</span><div class=right></div></div></header><div class=container><main role=main class=article><article class=single itemscope itemtype=http://schema.org/BlogPosting><div class=meta><span class=key>published on</span>
 <span class=val><time itemprop=datePublished datetime="2018-10-18 17:56:09">2018-10-18 17:56:09</time></span>
-<span class=key>2695 words</span></div><h1 class=headline itemprop=headline>Windows环境总结</h1><section class=body itemprop=articleBody><h1 id=windows-环境的使用总结>windows 环境的使用总结</h1><h2 id=一基础软件>一、基础软件</h2><h3 id=下载>下载</h3><p>FDM,迅雷其实还可以。NDM
+<span class=key>2820 words</span></div><h1 class=headline itemprop=headline>Windows环境总结</h1><section class=body itemprop=articleBody><h1 id=windows-环境的使用总结>windows 环境的使用总结</h1><h2 id=一基础软件>一、基础软件</h2><h3 id=下载>下载</h3><p>FDM,迅雷其实还可以。NDM
 axel
 qBittorrent 可以安装插件，进行搜索。tracker，
 <a href=https://github.com/XIU2/TrackersListCollection>https://github.com/XIU2/TrackersListCollection</a></p><p><a href=https://sleele.com/2020/03/16/%E9%AB%98%E9%98%B6%E6%95%99%E7%A8%8B-%E8%BF%BD%E5%89%A7%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96/>docker compose 版本</a></p><h3 id=压缩>压缩</h3><p>7-zip 开源，无广告，简单好用
@@ -11,7 +11,7 @@ NanaZip <a href=https://github.com/M2Team/NanaZip>https://github.com/M2Team/Nana
 浏览器网页广告，adguad
 搜索引擎垃圾调目，翻墙换 google。或者换搜索引擎，比如头条搜索，或者安装一些百度广告过滤插件。尽量的减少搜索引擎的流氓行为。</p><h3 id=软件恶意捆绑安装以及卸载不干净的问题>软件恶意捆绑安装，以及卸载不干净的问题</h3><p>首选是自己识别，因为很多安装都是各种隐藏的小勾选。
 还有一些流氓软件，各种关联安装。</p><p>第一种尽量规避的方式是，安装软件到官网下载。
-第二个尽量详细查看安装过程中的小猫腻</p><p>软件卸载残留，geek uninstller</p><h3 id=输入法的问题>输入法的问题。</h3><p>1.经常性快熟敲击键盘的时候，总是失误切换到了微软的难用的垃圾输入法。
+第二个尽量详细查看安装过程中的小猫腻</p><p>软件卸载残留，geek uninstller</p><h3 id=输入法的问题>输入法的问题</h3><p>1.经常性快熟敲击键盘的时候，总是失误切换到了微软的难用的垃圾输入法。
 原因，系统存在微软输入法，和搜索输入法，并且都存在中英文。</p><p>解决，将操作系统级别的输入法切换快捷键禁用掉。使其永不切换，只使用搜狗输入法。之后只需要中英文切换就好。再也不用担心杂乱。</p><p>细节：不可将微软输入法卸载掉，这样也能达到效果，但是会出现一些问题，当使用 windows 的 office 的软件的时候，甚至还有一些其他潜在问题不可知。 2. 广告，和悬浮的问题。造成桌面很不清爽
 设置输入法，去掉所有广告位置，并且将输入法切入状态栏</p><p>//todo autohotkey 控制搜狗输入法进行，语言切换。是适配 vim 的 ctrl+[ 进行工作。
 //具体的讲，在 vscode，idea，或者 windows terminal 的状态下，使用这个配置</p><h3 id=磁盘问题>磁盘问题</h3><ol><li>文件单纯存盘，和系统盘分离开
@@ -60,5 +60,65 @@ chrome 的 vimsurfing 设置，还有虚拟准面的切换快捷键。能给你�
 如果从ahk直接调用，就不会读取环境变量。</p><p>手动配置启动的时候刷新变量
 <a href=https://stackoverflow.com/questions/17794507/reload-the-path-in-powershell>https://stackoverflow.com/questions/17794507/reload-the-path-in-powershell</a></p><ol><li>安装pwsh7</li><li>配置emacs模式。<ol><li>notepad $profile</li><li>贴入，这个位置的内容。https://github.com/PowerShell/PSReadLine/blob/master/PSReadLine/SamplePSReadLineProfile.ps1</li><li>添加一个重新加载配置。$env:Path = [System.Environment]::GetEnvironmentVariable(&ldquo;Path&rdquo;,&ldquo;Machine&rdquo;) + &ldquo;;&rdquo; + [System.Environment]::GetEnvironmentVariable(&ldquo;Path&rdquo;,&ldquo;User&rdquo;)</li></ol></li></ol><h2 id=powershell-的初始设置建议>powershell 的初始设置建议</h2><p><a href=https://dev.to/codeasy/8-tips-for-setting-up-powershell-on-windows-mjf>https://dev.to/codeasy/8-tips-for-setting-up-powershell-on-windows-mjf</a></p><h2 id=windows的软件包管理-wingetscoopchocklate>windows的软件包管理。 winget，scoop，chocklate</h2><p>参考此winget列表
 <a href=https://www.v2ex.com/t/932265#;>https://www.v2ex.com/t/932265#;</a>
-<a href=https://dev.to/codeasy/8-tips-for-setting-up-powershell-on-windows-mjf>https://dev.to/codeasy/8-tips-for-setting-up-powershell-on-windows-mjf</a></p></section></article></main><div id=gitalk-container></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css><script src=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js></script>
+<a href=https://dev.to/codeasy/8-tips-for-setting-up-powershell-on-windows-mjf>https://dev.to/codeasy/8-tips-for-setting-up-powershell-on-windows-mjf</a></p><pre tabindex=0><code class=language-winget data-lang=winget>&#34;qBittorrent.qBittorrent&#34;
+&#34;JavadMotallebi.NeatDownloadManager&#34;
+
+&#34;Nutstore.Nutstore&#34;
+&#34;Baidu.BaiduNetdisk&#34;
+&#34;NetEase.CloudMusic&#34;	
+
+&#34;M2Team.NanaZip&#34;
+
+&#34;Google.Chrome&#34;
+&#34;yang991178.fluent-reader&#34;
+
+&#34;Tencent.TIM&#34;
+&#34;Tencent.WeChat&#34;
+&#34;Telegram.TelegramDesktop&#34;
+
+&#34;Kingsoft.WPSOffice&#34;
+&#34;GeekUninstaller.GeekUninstaller&#34;
+&#34;Xmind.Xmind.8&#34;
+&#34;NickeManarin.ScreenToGif&#34;
+&#34;Stretchly.Stretchly&#34;
+&#34;CLechasseur.PathCopyCopy&#34;
+&#34;Mozilla.Thunderbird&#34;
+&#34;Sogou.SogouInput&#34;
+&#34;Youqu.ToDesk&#34;
+&#34;Fndroid.ClashForWindows&#34;
+
+&#34;AutoHotkey.AutoHotkey&#34;
+&#34;LiErHeXun.Quicker&#34;
+&#34;Yuanli.uTools&#34;
+
+&#34;Telerik.Fiddler.Classic&#34;
+&#34;WiresharkFoundation.Wireshark&#34;
+
+&#34;Git.Git&#34;
+&#34;JesseDuffield.lazygit&#34;
+
+&#34;Microsoft.WindowsTerminal&#34;
+&#34;Microsoft.VisualStudioCode&#34;
+
+&#34;Microsoft.PowerShell&#34;
+
+## 需要破解一下
+&#34;SublimeHQ.SublimeText.4&#34;
+&#34;ScooterSoftware.BeyondCompare4&#34;
+&#34;JetBrains.IntelliJIDEA.Ultimate&#34;
+&#34;Bopsoft.Listary&#34;
+&#34;Piriform.CCleaner.ProTrial&#34;
+
+##
+wsl2，wsl1 混合使用
+安装zsh，zsh plugin，helix，git，lazygit，maven，jdk，nvm，coda，
+
+## 
+git clone https://github.com/fanlushuai/my-windows-shortcut-operation.git
+git clone https://github.com/fanlushuai/blog.git
+
+## 仓库不存在的
+regexBuddy
+StrokesPlus.net
+</code></pre></section></article></main><div id=gitalk-container></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css><script src=https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js></script>
 <script>const gitalk=new Gitalk({clientID:"dcf0c61ac0ce08c3c9cc",clientSecret:"a8e5a8b611b5e9083e004ee5f0122095cf7e6f43",repo:"fanlushuai.github.io",owner:"fanlushuai",admin:["fanlushuai"],id:decodeURI(location.pathname),distractionFreeMode:!1});(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("gitalk-container").innerHTML="Gitalk comments not available by default when the website is previewed locally.";return}gitalk.render("gitalk-container")})()</script></div><footer><div class=container><span class=copyright>Many Thanks to Vscode-Github-Hugo-Base16 Developers</span></div></footer></body></html>

@@ -524,3 +524,19 @@ pre { background: var(--base00); color: var(--base07) }
 .highlight .vg { color: var(--base08) } /* Name.Variable.Global */
 .highlight .vi { color: var(--base08) } /* Name.Variable.Instance */
 .highlight .il { color: var(--base09) } /* Literal.Number.Integer.Long */
+
+#body img, #body .video-container {
+  margin: 3rem auto;
+  display: block;
+  text-align: center;
+}
+
+#body img[alt$="<"] {
+  float: left;
+}
+#body img[alt$="><"] {
+  float: center;
+}
+#body img[alt$=">"] {
+  float: right;
+}
