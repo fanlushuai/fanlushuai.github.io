@@ -531,7 +531,7 @@ pre { background: var(--base00); color: var(--base07) }
   text-align: center;
 }
 
-#body img[alt$=""] {
+#body img {
   float: center;
 }
 #body img[alt$="<"] {
