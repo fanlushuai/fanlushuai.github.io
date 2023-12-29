@@ -1,0 +1,27 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content><meta name=generator content="Hugo 0.121.1"><meta name=viewport content="width=device-width,initial-scale=1"><script>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-188010236-1","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script><link rel=stylesheet href=/css/style.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type=text/css><link rel=alternate href=/index.xml type=application/rss+xml title=Auh><title>Auh</title></head><body><header><div class="container clearfix"><a class=path href>[Auh]</a>
+<span class=caret># _</span><div class=right></div></div></header><div class=container><main role=main class=article><article class=single itemscope itemtype=http://schema.org/BlogPosting><div class=meta><span class=key>published on</span>
+<span class=val><time itemprop=datePublished datetime="2023-12-29 18:37:17">2023-12-29 18:37:17</time></span>
+<span class=key>268 words</span></div><h1 class=headline itemprop=headline>讯飞ahk</h1><section class=body itemprop=articleBody><h1 id=讯飞-ahk-助手>讯飞 ahk 助手</h1><h2 id=下载>下载</h2><p><a href=https://gofile.io/d/Op9iAW>my-ahks-v1.0-12-29_18_35.zip</a></p><h2 id=使用介绍>使用介绍</h2><h3 id=函数说明>函数说明：</h3><p>bootXunFeiFloatWin 启动讯飞悬浮窗
+switchXunFeiFloatWin 打开或者关闭悬浮窗
+toSimpleChinese 在启动讯飞悬浮窗的前提下，切换到普通话
+toSuiShengYi 在启动讯飞悬浮窗的前提下，切换到随声译</p><h3 id=使用例子>使用例子</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ahk data-lang=ahk><span style=display:flex><span><span style=color:#75715e>; 悬浮窗路径</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>global config_xunfei_location <span style=color:#f92672>:=</span> &#39;<span style=color:#e6db74>&#34;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\讯飞输入法\语音悬浮窗.lnk&#34;</span>&#39;<span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>; 按下1，就会启动悬浮窗，并且选择普通话。如果已经启动了，就直接选择普通话</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>1:: {<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>    bootXunFeiFloatWin<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>    toSimpleChinese<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>}<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>
+</span></span><span style=display:flex><span>2:: {<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>    bootXunFeiFloatWin<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>    toSuiShengYi<span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>}<span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>; 开关悬浮窗</span><span style=color:#960050;background-color:#1e0010>
+</span></span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010></span>3:: switchXunFeiFloatWin<span style=color:#960050;background-color:#1e0010>
+</span></span></span></code></pre></div><h3 id=配置要求>配置要求</h3><ol><li>代码里面的变量值：（配置为悬浮窗的路径）</li></ol><p>global config_xunfei_location</p><ol start=2><li><p>如果，在本机不可用，就需要配置这几个图片，替换为自己本电脑的：
+xunfei_change_blue.png
+xunfei_change_gray.png
+xunfei_putonghua.png
+xunfei_suishengyi.png</p></li><li><p>自己设置键位绑定(上面的，1，2，3 只是个例子)</p></li></ol></section></article></main><script async src="https://www.googletagmanager.com/gtag/js?id=G-4VV6CRVEP7"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-4VV6CRVEP7")</script></div><footer><div class=container><span class=copyright>Many Thanks to Vscode-Github-Hugo-Base16 Developers</span></div></footer></body></html>
